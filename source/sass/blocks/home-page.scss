@@ -43,16 +43,16 @@
   width: 133px;
   height: 37px;
   text-align: start;
-  // margin-top: 73px;
+  margin-top: 73px;
 }
 
-// .home-page__title {
-//   display: block;
-//   text-align: end;
-//   font-family: $ff-alumni;
-//   font-size: 92px;
-//   font-weight: 600;
-//   letter-spacing: 5px;
-//   text-transform: uppercase;
-//   line-height: 110px;
-// }
+.home-page__title {
+  display: block;
+  text-align: end;
+  font-family: $ff-alumni;
+  font-size: 92px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 110px;
+}
