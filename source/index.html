@@ -19,35 +19,37 @@
       <div class="wrapper__background">
         <header class="page-header">
           <div class="page-header__wrapper container">
-            <a class="page-header__logo link-logo">
+            <a class="page-header__link">
               <h4 class="visually-hidden">Логотип фитнес клуба</h4>
-              <svg class="link-logo__icon" width="121" height="44">
+              <svg class="page-header__logo" width="121" height="44">
                 <use href="./img/sprite.svg#logo-club"></use>
               </svg>
             </a>
-            <a class="page-header__phone" href="tel:88005555555">8&#8209;800&#8209;555&#8209;55&#8209;55</a>
+            <ul class="page-header__list">
+              <li>
+                <a class="page-header__phone" href="tel:88005555555">8&#8209;800&#8209;555&#8209;55&#8209;55</a>
+              </li>
+            </ul>
           </div>
         </header>
         <main>
           <section class="home-page">
             <div class="home-page__wrapper container">
-              <div class="home-page__description">
-                <ul class="home-page__list">
-                  <li class="home-page__item">Тренажёрный зал</li>
-                  <li class="home-page__item">Групповые занятия</li>
-                  <li class="home-page__item">Кардио-зона</li>
-                </ul>
-                <div class="home-page__group">
-                  <span class="home-page__sity">Омск</span>
+              <div class="home-page__group">
+                <span class="home-page__sity">Омск</span>
+                <div class="home-page__description">
+                  <ul class="home-page__list">
+                    <li class="home-page__item">Тренажёрный зал</li>
+                    <li class="home-page__item">Групповые занятия</li>
+                    <li class="home-page__item">Кардио-зона</li>
+                  </ul>
                   <h1 class="home-page__title">Фитнес центр</h1>
-                  <a class="home-page__link">Купить абонемент</a>
                 </div>
+                <a class="home-page__link">Купить абонемент</a>
               </div>
               <div class="home-page__image-wrapper">
-                <picture>
-                  <source srcset="./img/page-block/page-block-image.webp, ./img/page-block/page-block-image@2x.webp 2x">
-                  <img class="home-page__image" src="./img/page-block/page-block-image.jpg" srcset="./img/page-block/page-block-image@2x.jpg" width="500" height="556" alt="Фото тренера.">
-                </picture>
+                <div class="home-page__image">
+                </div>
               </div>
             </div>
           </section>

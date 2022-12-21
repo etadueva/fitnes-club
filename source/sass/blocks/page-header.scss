@@ -3,17 +3,74 @@
   justify-content: space-between;
 }
 
-.page-header__logo {
+.page-header__link {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.page-header__phone {
-  color: $color-default-white;
+.page-header__list {
+  list-style-type: none;
+  padding: 0;
   margin-top: 34px;
   margin-bottom: 30px;
   margin-right: 2px;
+}
+
+.page-header__phone {
+  color: $color-default-white;
   font-family: $ff-alumni;
-  font-size: 21px;
+  font-size: 26px;
   font-weight: 600;
+  letter-spacing: calc(1em / 35);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@include tablet-width-max {
+  .page-header__logo {
+    width: 82px;
+    height: 17px;
+  }
+
+  .page-header__link {
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+
+  .page-header__phone {
+    font-size: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+    display: block;
+    letter-spacing: calc(1em / 50);
+  }
+
+  .page-header__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+  }
+}
+
+@include mobile-width-max {
+  .page-header__logo {
+    width: 69px;
+    height: 24px;
+  }
+
+  .page-header__link {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
+  .page-header__phone {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .page-header__list {
+    margin-top: 12px;
+    margin-right: 0;
+  }
 }

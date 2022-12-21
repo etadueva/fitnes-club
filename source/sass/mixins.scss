@@ -50,6 +50,26 @@
   }
 }
 
+@mixin desktop-width-min {
+  @media (min-width: ($desktop-width-min)) {
+    @content;
+  }
+}
+
+@mixin tablet-min-max {
+  @media (min-width: ($tablet-width-min)) and (max-width: ($tablet-width-max)) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media (min-width: ($desktop-width-max)) and (max-width: ($desktop-width-max)) {
+    @content;
+  }
+}
+
+
 // ---------------------------------
 
 // не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
