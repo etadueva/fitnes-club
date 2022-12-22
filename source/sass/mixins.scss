@@ -50,6 +50,7 @@
   }
 }
 
+
 @mixin desktop-width-min {
   @media (min-width: ($desktop-width-min)) {
     @content;
@@ -69,6 +70,17 @@
   }
 }
 
+@mixin tablet {
+  @media (min-width: ($tablet-width-min)) and (max-width: ($tablet-width-min)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: ($mobile)) and (max-width: ($mobile)) {
+    @content;
+  }
+}
 
 // ---------------------------------
 

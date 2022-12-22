@@ -104,6 +104,10 @@
 }
 
 @include tablet-width-max  {
+  .home-page {
+    min-height: 390px;
+    padding-bottom: 93px;
+  }
   .home-page__description {
     margin: 0;
     justify-content: space-between;
@@ -146,15 +150,14 @@
 
   .home-page__image-wrapper {
     padding-right: 0;
+    max-height: 390px;
   }
 
   .home-page__image {
-    height: 100%;
-    min-height: 390px;
     margin-top: 0;
     margin-bottom: 52px;
     background-image: url("../img/page-block/home-page-tablet.jpg");
-    background-size: contain;
+    background-size: 324px 390px;
     background-position: top;
     background-repeat: no-repeat;
     margin-top: 10px;
@@ -163,16 +166,28 @@
     @include retina {
       background-image: url("../img/page-block/home-page-tablet@2x.jpg");
     }
+
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
   }
 }
 
 @include mobile-width-max {
+  .home-page {
+    padding-bottom: 0;
+  }
+
   .home-page__image-wrapper {
     display: none;
   }
 
   .home-page__wrapper {
     display: block;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .home-page__description {

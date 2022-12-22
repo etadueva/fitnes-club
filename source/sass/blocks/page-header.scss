@@ -54,6 +54,11 @@
 }
 
 @include mobile-width-max {
+  .page-header__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .page-header__logo {
     width: 69px;
     height: 24px;

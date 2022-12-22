@@ -785,6 +785,83 @@ button,
   margin-right: 61px;
 }
 
+.gym {
+  background-color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.gym__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.7fr;
+  grid-template-columns: 1fr 1.7fr;
+}
+
+.gym__text {
+  margin-left: 60px;
+}
+
+.gym__title {
+  font-family: "Alumni Sans", "Impact", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 0.0294117647em;
+  margin-top: 51px;
+  margin-bottom: 5px;
+  line-height: 32px;
+}
+
+.gym__size {
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  margin-top: 22px;
+}
+
+.gym__description {
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.gym__description--two {
+  margin-top: 8px;
+  margin-bottom: 148px;
+}
+
+.gym__media {
+  margin-left: 8px;
+  position: relative;
+  height: 100%;
+}
+
+.gym__image {
+  width: 91%;
+  height: 83%;
+  background-image: url("../img/description-club/club-image.jpg");
+  background-size: cover;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  height: 228px;
+  width: 364px;
+}
+
+.gym__video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -875,6 +952,11 @@ button,
     margin-bottom: 5px;
   }
 
+  .home-page {
+    min-height: 390px;
+    padding-bottom: 93px;
+  }
+
   .home-page__description {
     margin: 0;
     -webkit-box-pack: justify;
@@ -922,19 +1004,97 @@ button,
 
   .home-page__image-wrapper {
     padding-right: 0;
+    max-height: 390px;
   }
 
   .home-page__image {
-    height: 100%;
-    min-height: 390px;
     margin-top: 0;
     margin-bottom: 52px;
     background-image: url("../img/page-block/home-page-tablet.jpg");
-    background-size: contain;
+    background-size: 324px 390px;
     background-position: top;
     background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 83px;
+  }
+
+  .home-page__image::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  .gym {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .gym__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .gym__media {
+    width: 100%;
+    margin-top: 44px;
+    margin-left: 0;
+  }
+
+  .gym__media::after {
+    content: "";
+    display: block;
+    padding-top: 12%;
+  }
+
+  .gym__text {
+    margin: 0;
+  }
+
+  .gym__title {
+    font-size: 42px;
+    text-align: center;
+    padding-right: 5px;
+    margin-top: 9px;
+    padding-right: 15px;
+  }
+
+  .gym__size {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .gym__description {
+    text-align: center;
+    padding-left: 88px;
+    padding-right: 88px;
+    margin-top: 35px;
+  }
+
+  .gym__description--two {
+    display: none;
+  }
+
+  .gym__image {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  .gym__image::before {
+    content: "";
+    display: block;
+    padding-top: 51%;
+  }
+
+  .gym__video-wrapper {
+    width: 40%;
+    height: 39%;
+    left: 30%;
   }
 }
 
@@ -950,7 +1110,12 @@ button,
   }
 
   .container {
-    padding: 0 15px;
+    padding: 0 0;
+  }
+
+  .page-header__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .page-header__logo {
@@ -973,12 +1138,18 @@ button,
     margin-right: 0;
   }
 
+  .home-page {
+    padding-bottom: 0;
+  }
+
   .home-page__image-wrapper {
     display: none;
   }
 
   .home-page__wrapper {
     display: block;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .home-page__description {
@@ -1011,10 +1182,96 @@ button,
     width: 100%;
     margin-bottom: 80px;
   }
+
+  .gym {
+    padding-top: 66px;
+    padding-bottom: 0;
+  }
+
+  .gym__title {
+    margin: 0;
+    text-align: start;
+    padding: 0;
+    font-size: 32px;
+  }
+
+  .gym__size {
+    text-align: start;
+  }
+
+  .gym__description {
+    padding: 0;
+    text-align: start;
+    margin-top: 26px;
+    padding-right: 15px;
+  }
+
+  .gym__text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .gym__media {
+    margin-top: 33px;
+  }
+
+  .gym__media::after {
+    padding-top: 22%;
+  }
+
+  .gym__image::before {
+    padding-top: 98%;
+  }
+
+  .gym__video-wrapper {
+    position: relative;
+    margin-top: 39px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .wrapper {
     background: conic-gradient(from 15.5rad at 21% 36%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1366px) {
+  .gym__image {
+    background-position: -1px -36px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  .gym__image {
+    background-size: 774px 403px;
+    background-position: -94px -19px;
+  }
+
+  .gym__video {
+    -o-object-position: 0px -3px;
+    object-position: 0px -3px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 320px) {
+  .gym__image {
+    background-size: 469px 313px;
+    background-position: -134px 0;
+  }
+
+  .gym__video {
+    -o-object-position: 0px -3px;
+    object-position: 0px -3px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .gym__image {
+    background-image: url("../img/description-club/club-image@2x.jpg");
   }
 }
