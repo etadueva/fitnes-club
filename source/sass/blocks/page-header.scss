@@ -24,6 +24,11 @@
   letter-spacing: calc(1em / 35);
   margin-top: 5px;
   margin-bottom: 5px;
+
+  @include hover-focus {
+    outline: 1px solid $color-default-white;
+    border-radius: 2px;
+  }
 }
 
 @include tablet-width-max {

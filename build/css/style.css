@@ -679,6 +679,11 @@ button,
   margin-bottom: 5px;
 }
 
+.page-header__phone.focus-visible:focus {
+  outline: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
 .home-page__wrapper {
   display: -ms-grid;
   display: grid;
@@ -783,6 +788,11 @@ button,
   padding-top: 15px;
   margin-top: 50px;
   margin-right: 61px;
+}
+
+.home-page__link.focus-visible:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .gym {
@@ -1267,6 +1277,18 @@ button,
   .gym__video {
     -o-object-position: 0px -3px;
     object-position: 0px -3px;
+  }
+}
+
+@media (hover: hover) {
+  .page-header__phone:hover:not(.focus-visible) {
+    outline: 1px solid #ffffff;
+    border-radius: 2px;
+  }
+
+  .home-page__link:hover:not(.focus-visible) {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
 

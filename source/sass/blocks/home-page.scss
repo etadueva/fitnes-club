@@ -91,6 +91,11 @@
   padding-top: 15px;
   margin-top: 50px;
   margin-right: 61px;
+
+  @include hover-focus {
+    outline: none;
+    background-color: $color-white-transparent;
+  }
 }
 
 @include desktop-width-min {
