@@ -906,6 +906,28 @@ button,
   column-gap: 40px;
 }
 
+.season-tickets__tabs-item--1:checked ~ .season-tickets__tabs-title--1,
+.season-tickets__tabs-item--2:checked ~ .season-tickets__tabs-title--2,
+.season-tickets__tabs-item--3:checked ~ .season-tickets__tabs-title--3 {
+  position: relative;
+}
+
+.season-tickets__tabs-item--1:checked ~ .season-tickets__tabs-title--1::after,
+.season-tickets__tabs-item--2:checked ~ .season-tickets__tabs-title--2::after,
+.season-tickets__tabs-item--3:checked ~ .season-tickets__tabs-title--3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -13px;
+  background-color: #d10a42;
+}
+
+.season-tickets__tabs-item--2:checked ~ .season-tickets__tabs-title--2::after {
+  width: calc(100% - 30px);
+}
+
 .season-tickets__item {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -913,6 +935,21 @@ button,
   background-color: #ffffff;
   padding: 10px;
   padding-bottom: 59px;
+}
+
+.season-tickets__item--2 {
+  position: relative;
+}
+
+.season-tickets__item--2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: calc(100% - 5px);
+  height: 2px;
+  background-color: rgba(120, 120, 120, 0.2);
+  top: -45px;
+  right: 3px;
 }
 
 .season-tickets__title {
