@@ -42,14 +42,14 @@
 }
 
 .gym__media {
-  margin-left: 8px;
+  margin-left: 1px;
   position: relative;
+  width: 100%;
   height: 100%;
 }
 
 .gym__image {
-  width: 91%;
-  height: 83%;
+  width: 90%;
   background-image: url("../img/description-club/club-image.jpg");
   background-size: cover;
   margin-left: auto;
@@ -58,6 +58,12 @@
 
   @include retina {
     background-image: url("../img/description-club/club-image@2x.jpg");
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 61%;
   }
 }
 
@@ -68,6 +74,7 @@
   left: 0;
   height: 228px;
   width: 364px;
+  margin-left: 7px;
 }
 
 .gym__video {
@@ -149,6 +156,7 @@
     width: 40%;
     height: 39%;
     left: 30%;
+    margin-left: 0;
   }
 }
 
