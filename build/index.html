@@ -63,10 +63,14 @@
               </div>
               <div class="gym__media">
                 <div class="gym__image"></div>
-                <div class="gym__video-wrapper">
-                  <video controls poster="./img/description-club/club-image-video.jpg" class="gym__video" width="364" height="228" preload="none">
-                    <source src="https://youtu.be/9TZXsZItgdw" type="video/mp4">
-                  </video>
+                <div class="gym__video-wrapper gym__video-wrapper--image-enabled">
+                  <a class="gym__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+                    <h4 class="visually-hidden">Ссылка на видео</h4>
+                    <div class="gym__video-background"></div>
+                  </a>
+                  <button class="gym__button" type="button">
+                    <img class="gym__button-icon" src="../img/description-club/button-video.png" srcset="../img/description-club/button-video@2x.png" width="100" height="100" alt="Иконка кнопки воспроизведения видео.">
+                  </button>
                 </div>
               </div>
             </div>
@@ -216,6 +220,32 @@
                   </ul>
                 </div>
               </div>
+            </div>
+          </section>
+          <section class="promo">
+            <div class="promo__wrapper container">
+              <div class="promo__info">
+                <h2 class="promo__title">Super games</h2>
+                <ul class="promo__conditions">
+                  <li class="promo__condition">
+                    <h3 class="promo__title-condition">Дата</h3>
+                    <div class="promo__wrapper-date">
+                      <span class="promo__number">7</span>
+                      <div class="promo__date">
+                        <span class="promo__date-month-year">Марта</span>
+                        <span class="promo__date-month-year">2019</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="promo__condition">
+                    <h3 class="promo__title-condition">Время</h3>
+                    <span class="promo__number promo__number--time">12:00</span>
+                  </li>
+                </ul>
+                <span class="promo__correction">Ежегодные соревнования по&nbsp;CrossFit</span>
+                <a class="promo__button button" href="#">Заполнить заявку</a>
+              </div>
+              <div class="promo__image"></div>
             </div>
           </section>
         </main>

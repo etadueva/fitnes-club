@@ -37,7 +37,7 @@
 
   &--two {
     margin-top: 8px;
-    margin-bottom: 148px;
+    margin-bottom: 147px;
   }
 }
 
@@ -49,7 +49,7 @@
 }
 
 .gym__image {
-  width: 90%;
+  width: 90.4%;
   background-image: url("../img/description-club/club-image.jpg");
   background-size: cover;
   margin-left: auto;
@@ -72,20 +72,70 @@
   z-index: 1;
   bottom: 0;
   left: 0;
-  height: 228px;
-  width: 364px;
+  width: 49.8%;
   margin-left: 7px;
+  background-image: url("../img/description-club/club-image-video.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--image-enabled {
+    padding-bottom: 31.3%;
+  }
+
+  &--video-enabled {
+    height: 44%;
+  }
+
+  &--enabled {
+    cursor: pointer;
+
+    .gym__button {
+      display: block;
+    }
+  }
+
+  @include retina {
+    background-image: url("../img/description-club/club-image-video@2x.jpg");
+  }
 }
 
-.gym__video {
+.gym__video-background {
+  position: absolute;
+  background-color: $color-dark-cerulean;
+  width: 100%;
+  padding-bottom: 63%;
+}
+
+.gym__button {
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-transparent;
+  cursor: pointer;
+  padding: 0;
+  display: none;
+
+  @include hover-focus {
+    filter: brightness(150%);
+    outline: none;
+  }
+}
+
+.gym__iframe {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 @include desktop {
   .gym__image {
     background-position: -1px -36px;
+  }
+
+  .gym__video-wrapper {
+    background-size: 394px 262px;
+    background-position: -4px -27px;
   }
 }
 
@@ -108,7 +158,7 @@
     &::after {
       content: "";
       display: block;
-      padding-top: 12%;
+      padding-top: 12.1%;
     }
   }
 
@@ -153,10 +203,31 @@
   }
 
   .gym__video-wrapper {
-    width: 40%;
-    height: 39%;
+    width: 39.2%;
     left: 30%;
-    margin-left: 0;
+    margin-left: 3px;
+
+    &--image-enabled {
+      padding-bottom: 25%;
+    }
+
+    &--video-enabled {
+      height: 39%;
+    }
+  }
+
+  .gym__video-background {
+    padding-bottom: 64%;
+  }
+
+  .gym__button {
+    top: 51%;
+    left: 49%;
+  }
+
+  .gym__button-icon {
+    width: 73px;
+    height: 73px;
   }
 }
 
@@ -166,9 +237,9 @@
     background-position: -94px -19px;
   }
 
-  .gym__video {
-    object-position: 0px -3px;
-    object-fit: cover;
+  .gym__video-wrapper {
+    background-size: 288px 192px;
+    background-position: -2px -17px;
   }
 }
 
@@ -203,9 +274,10 @@
 
   .gym__media {
     margin-top: 33px;
+    width: 100%;
 
     &::after {
-      padding-top: 22%;
+      display: none;
     }
   }
 
@@ -218,9 +290,27 @@
   .gym__video-wrapper {
     position: relative;
     margin-top: 39px;
+    margin-left: 0;
+    margin-bottom: 71px;
     width: 100%;
-    height: 100%;
     left: 0;
+
+    &--image-enabled {
+      padding-bottom: 52%;
+    }
+
+    &--video-enabled {
+      min-height: 39%;
+    }
+  }
+
+  .gym__video-background {
+    padding-bottom: 52%;
+  }
+
+  .gym__button {
+    top: 50%;
+    left: 50%;
   }
 }
 
@@ -230,7 +320,8 @@
     background-position: -134px 0;
   }
 
-  .gym__video {
-    object-position: 0px -3px;
+  .gym__video-wrapper {
+    background-size: 320px 213px;
+    background-position: 0 -3px;
   }
 }

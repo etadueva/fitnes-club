@@ -467,6 +467,10 @@ body {
 a {
   color: #000000;
   text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 img,
@@ -573,6 +577,10 @@ button,
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .wrapper {
@@ -837,7 +845,7 @@ button,
 
 .gym__description--two {
   margin-top: 8px;
-  margin-bottom: 148px;
+  margin-bottom: 147px;
 }
 
 .gym__media {
@@ -848,7 +856,7 @@ button,
 }
 
 .gym__image {
-  width: 90%;
+  width: 90.4%;
   background-image: url("../img/description-club/club-image.jpg");
   background-size: cover;
   margin-left: auto;
@@ -867,16 +875,212 @@ button,
   z-index: 1;
   bottom: 0;
   left: 0;
-  height: 228px;
-  width: 364px;
+  width: 49.8%;
+  margin-left: 7px;
+  background-image: url("../img/description-club/club-image-video.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gym__video-wrapper--image-enabled {
+  padding-bottom: 31.3%;
+}
+
+.gym__video-wrapper--video-enabled {
+  height: 44%;
+}
+
+.gym__video-wrapper--enabled {
+  cursor: pointer;
+}
+
+.gym__video-wrapper--enabled .gym__button {
+  display: block;
+}
+
+.gym__video-background {
+  position: absolute;
+  background-color: rgba(20, 54, 122, 0.5);
+  width: 100%;
+  padding-bottom: 63%;
+}
+
+.gym__button {
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  padding: 0;
+  display: none;
+}
+
+.gym__button.focus-visible:focus {
+  -webkit-filter: brightness(150%);
+  filter: brightness(150%);
+  outline: none;
+}
+
+.gym__iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.promo {
+  background-color: #ffffff;
+  padding-top: 52px;
+  padding-bottom: 60px;
+}
+
+.promo__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.32fr;
+  grid-template-columns: 1fr 1.32fr;
+}
+
+.promo__info {
+  color: #ffffff;
+  background-color: #ed0233;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1.4fr;
+  grid-template-columns: 2fr 1.4fr;
+  padding: 83px 76px 84px;
+}
+
+.promo__correction {
+  grid-column: 1/-1;
+  font-size: 18px;
+  line-height: 150%;
+  margin-left: 2px;
+}
+
+.promo__title {
+  font-family: "Alumni Sans", "Impact", sans-serif;
+  font-size: 82px;
+  line-height: 96%;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin: 3px auto 0 0;
+  letter-spacing: 2px;
+}
+
+.promo__conditions {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 2px;
+  margin-left: auto;
+}
+
+.promo__condition {
+  margin-bottom: 10px;
+}
+
+.promo__title-condition {
+  margin: 0;
+  font-weight: 400;
+}
+
+.promo__number {
+  font-size: 40px;
+  line-height: 150%;
+  font-weight: 700;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+.promo__number--time {
+  position: relative;
+}
+
+.promo__number--time::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #ffffff;
+  width: 88px;
+  margin-left: 1px;
+  top: -1px;
+}
+
+.promo__wrapper-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.promo__wrapper-date::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #ffffff;
+  width: 64px;
+  margin-left: 1px;
+  top: 6px;
+}
+
+.promo__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 12px;
   margin-left: 7px;
 }
 
-.gym__video {
+.promo__date-month-year {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.promo__button {
+  grid-column: 1/-1;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  margin-top: 46px;
+  min-height: 71px;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 0.0588235294em;
+}
+
+.promo__button.focus-visible:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+.promo__image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  background-image: url("../img/promo/promo-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .season-tickets {
@@ -886,7 +1090,33 @@ button,
 }
 
 .season-tickets__tabs-item {
-  display: none;
+  z-index: -1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  height: 15px;
+  margin-top: 36px;
+}
+
+.season-tickets__tabs-item--1 {
+  margin-left: 9px;
+  margin-right: auto;
+  width: 68px;
+}
+
+.season-tickets__tabs-item--2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+}
+
+.season-tickets__tabs-item--3 {
+  margin-left: auto;
+  margin-right: 10px;
+  width: 96px;
 }
 
 .season-tickets__list {
@@ -984,6 +1214,10 @@ button,
   margin-top: 30px;
   margin-bottom: 10px;
   color: #102654;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .season-tickets__tabs-title--1 {
@@ -1113,6 +1347,12 @@ button,
   background-repeat: no-repeat;
   background-size: 480px 490px;
   background-position: right -190px bottom -78px;
+}
+
+.season-tickets__tabs-item--1:focus + .season-tickets__tabs-title--1,
+.season-tickets__tabs-item--2:focus + .season-tickets__tabs-title--2,
+.season-tickets__tabs-item--3:focus + .season-tickets__tabs-title--3 {
+  outline: 1px solid #d10a42;
 }
 
 /* @mixin hover-focus {
@@ -1301,7 +1541,7 @@ button,
   .gym__media::after {
     content: "";
     display: block;
-    padding-top: 12%;
+    padding-top: 12.1%;
   }
 
   .gym__text {
@@ -1345,10 +1585,105 @@ button,
   }
 
   .gym__video-wrapper {
-    width: 40%;
-    height: 39%;
+    width: 39.2%;
     left: 30%;
-    margin-left: 0;
+    margin-left: 3px;
+  }
+
+  .gym__video-wrapper--image-enabled {
+    padding-bottom: 25%;
+  }
+
+  .gym__video-wrapper--video-enabled {
+    height: 39%;
+  }
+
+  .gym__video-background {
+    padding-bottom: 64%;
+  }
+
+  .gym__button {
+    top: 51%;
+    left: 49%;
+  }
+
+  .gym__button-icon {
+    width: 73px;
+    height: 73px;
+  }
+
+  .promo {
+    padding-top: 47px;
+    margin-top: -1px;
+  }
+
+  .promo__wrapper {
+    -ms-grid-columns: 1fr 1.33fr;
+    grid-template-columns: 1fr 1.33fr;
+  }
+
+  .promo__info {
+    padding: 43px 44px 50px;
+  }
+
+  .promo__title {
+    font-size: 48px;
+    line-height: 96%;
+    margin-top: 8px;
+  }
+
+  .promo__title-condition {
+    font-size: 12px;
+  }
+
+  .promo__conditions {
+    margin-right: 0;
+  }
+
+  .promo__condition {
+    margin-bottom: 0;
+  }
+
+  .promo__number {
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0;
+  }
+
+  .promo__number--time::before {
+    width: 56px;
+    margin-left: -1px;
+    top: -1px;
+  }
+
+  .promo__date {
+    margin: 0;
+    margin-left: 3px;
+  }
+
+  .promo__date-month-year {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .promo__wrapper-date::before {
+    width: 42px;
+    top: -2px;
+    left: -2px;
+  }
+
+  .promo__correction {
+    font-size: 12px;
+    margin-left: 1px;
+    margin-top: 4px;
+  }
+
+  .promo__button {
+    font-size: 10px;
+    border: 2px solid #ffffff;
+    margin-top: 30px;
+    min-height: 41px;
+    padding: 5px;
   }
 
   .season-tickets {
@@ -1378,6 +1713,20 @@ button,
   .season-tickets__title {
     font-size: 42px;
     padding-right: 14px;
+  }
+
+  .season-tickets__tabs-item {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+
+  .season-tickets__tabs-item--1 {
+    margin-left: 50px;
+  }
+
+  .season-tickets__tabs-item--3 {
+    margin-right: 35px;
   }
 
   .season-tickets__tabs-list {
@@ -1573,10 +1922,11 @@ button,
 
   .gym__media {
     margin-top: 33px;
+    width: 100%;
   }
 
   .gym__media::after {
-    padding-top: 22%;
+    display: none;
   }
 
   .gym__image::before {
@@ -1586,13 +1936,52 @@ button,
   .gym__video-wrapper {
     position: relative;
     margin-top: 39px;
+    margin-left: 0;
+    margin-bottom: 71px;
     width: 100%;
-    height: 100%;
     left: 0;
   }
 
+  .gym__video-wrapper--image-enabled {
+    padding-bottom: 52%;
+  }
+
+  .gym__video-wrapper--video-enabled {
+    min-height: 39%;
+  }
+
+  .gym__video-background {
+    padding-bottom: 52%;
+  }
+
+  .gym__button {
+    top: 50%;
+    left: 50%;
+  }
+
+  .promo {
+    padding-top: 27px;
+    padding-bottom: 40px;
+  }
+
+  .promo__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .promo__image {
+    padding-top: 101%;
+  }
+
   .season-tickets__wrapper {
-    padding-top: 5px;
+    padding-top: 51px;
     padding-bottom: 71px;
   }
 
@@ -1686,6 +2075,15 @@ button,
   .gym__image {
     background-position: -1px -36px;
   }
+
+  .gym__video-wrapper {
+    background-size: 394px 262px;
+    background-position: -4px -27px;
+  }
+
+  .promo__image {
+    background-position: -20px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 768px) {
@@ -1694,11 +2092,13 @@ button,
     background-position: -94px -19px;
   }
 
-  .gym__video {
-    -o-object-position: 0px -3px;
-    object-position: 0px -3px;
-    -o-object-fit: cover;
-    object-fit: cover;
+  .gym__video-wrapper {
+    background-size: 288px 192px;
+    background-position: -2px -17px;
+  }
+
+  .promo__image {
+    background-position: -10px 0px;
   }
 }
 
@@ -1708,9 +2108,14 @@ button,
     background-position: -134px 0;
   }
 
-  .gym__video {
-    -o-object-position: 0px -3px;
-    object-position: 0px -3px;
+  .gym__video-wrapper {
+    background-size: 320px 213px;
+    background-position: 0 -3px;
+  }
+
+  .promo__image {
+    background-size: 525px 337px;
+    background-position: -88px 0;
   }
 }
 
@@ -1723,6 +2128,17 @@ button,
   .home-page__link:hover:not(.focus-visible) {
     outline: none;
     background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .gym__button:hover:not(.focus-visible) {
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    outline: none;
+  }
+
+  .promo__button:hover:not(.focus-visible) {
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
   }
 
   .season-tickets__item:hover:not(.focus-visible) {
@@ -1743,6 +2159,14 @@ button,
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .gym__image {
     background-image: url("../img/description-club/club-image@2x.jpg");
+  }
+
+  .gym__video-wrapper {
+    background-image: url("../img/description-club/club-image-video@2x.jpg");
+  }
+
+  .promo__image {
+    background-image: url("../img/promo/promo-image@2x.jpg");
   }
 
   .season-tickets__background {
