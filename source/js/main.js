@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {setupVideo} from './modules/video';
+import {showCard} from './modules/tuch-event';
 
 // ---------------------------------
 
@@ -9,10 +10,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  setupVideo();
 
   // Modules
   // ---------------------------------
+
+  showCard();
+  setupVideo();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

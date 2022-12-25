@@ -1,0 +1,219 @@
+.coaches {
+  background-color: $color-default-white;
+  margin-top: -1px;
+  padding-top: 58px;
+}
+
+.coaches__title {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  letter-spacing: 2px;
+  margin: 0;
+  display: block;
+  line-height: 80%;
+}
+
+.coaches__swiper {
+  margin-top: 59px;
+}
+
+.coaches__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.coaches__item {
+  width: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 113%;
+  }
+
+  @include hover {
+    .coaches__item-content {
+      z-index: 2;
+    }
+
+    .coaches__button-cover {
+      color: $color-transparent;
+    }
+  }
+}
+
+.coaches__item:focus-within {
+  .coaches__item-content {
+    z-index: 2;
+  }
+
+  .coaches__button-cover {
+    color: $color-transparent;
+  }
+}
+
+.coaches__item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-sapphire-transparent;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.coaches__item-content:focus-within {
+  z-index: 2;
+}
+
+.coaches__content-list {
+  font-size: 14px;
+  line-height: 150%;
+  margin-top: 33px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.coaches__content-item {
+  margin-bottom: 13px;
+  display: flex;
+  margin-left: 24px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: $color-default-white;
+    border-radius: 50%;
+    left: -16px;
+    top: 7px;
+  }
+}
+
+.coaches__item-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--first,
+  &--five {
+    background-image: url("../img/coaches/coache-pavlova.jpg");
+
+    @include retina {
+      background-image: url("../img/coaches/coache-pavlova@2x.jpg");
+    }
+  }
+
+  &--two,
+  &--six {
+    background-image: url("../img/coaches/coache-lavrov.jpg");
+
+    @include retina {
+      background-image: url("../img/coaches/coache-lavrov@2x.jpg");
+    }
+  }
+
+  &--three,
+  &--seven {
+    background-image: url("../img/coaches/coache-pashkov.jpg");
+
+    @include retina {
+      background-image: url("../img/coaches/coache-pashkov@2x.jpg");
+    }
+  }
+
+  &--four,
+  &--eight {
+    background-image: url("../img/coaches/coache-ketova.jpg");
+
+    @include retina {
+      background-image: url("../img/coaches/coache-ketova@2x.jpg");
+    }
+  }
+}
+
+.coaches__button-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border: none;
+  background-color: $color-transparent;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  width: 100%;
+  height: 100%;
+  color: $color-default-white;
+  padding-bottom: 23px;
+
+  @include focus {
+    outline: none;
+    border: 1px solid $color-sapphire;
+  }
+}
+
+.coaches__title-item {
+  text-align: center;
+
+  &--content {
+    margin: 0;
+    margin-top: 46px;
+    color: $color-default-white;
+    font-size: 18px;
+    line-height: 105%;
+    font-weight: 700;
+  }
+}
+
+.coaches__direction {
+  text-align: center;
+}
+
+@include desktop {
+  .coaches__item-cover {
+    &--first,
+    &--five {
+      background-size: 260px 390px;
+      background-position: 0 -38px;
+    }
+
+    &--two,
+    &--six {
+      background-size: 312px 468px;
+      background-position: -49px -34px;
+    }
+
+    &--three,
+    &--seven {
+      background-size: 260px 462px;
+      background-position: 0 -24px;
+    }
+
+    &--four,
+    &--eight {
+      background-size: 354px 530px;
+      background-position: -47px -55px;
+    }
+  }
+}
