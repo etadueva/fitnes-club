@@ -217,3 +217,33 @@
     }
   }
 }
+
+@include tablet-width-max {
+  .coaches {
+    padding-top: 49px;
+  }
+
+  .coaches__title {
+    font-size: 42px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-right: 6px;
+  }
+
+  .coaches__swiper {
+    margin-top: 40px;
+  }
+
+  .coaches__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+
+  .coaches__item {
+    &::before {
+      padding-top: 109%;
+    }
+  }
+}

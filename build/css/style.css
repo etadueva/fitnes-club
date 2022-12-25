@@ -1989,6 +1989,33 @@ button,
   .season-tickets__link {
     width: 51%;
   }
+
+  .coaches {
+    padding-top: 49px;
+  }
+
+  .coaches__title {
+    font-size: 42px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-right: 6px;
+  }
+
+  .coaches__swiper {
+    margin-top: 40px;
+  }
+
+  .coaches__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+
+  .coaches__item::before {
+    padding-top: 109%;
+  }
 }
 
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
