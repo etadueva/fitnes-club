@@ -1376,27 +1376,36 @@ button,
   font-size: 54px;
   letter-spacing: 2px;
   margin: 0;
+  margin-left: 104px;
   display: block;
   line-height: 80%;
 }
 
+.coaches__wrapper {
+  position: relative;
+}
+
+.coaches__wrapper--swiper {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 92px;
+}
+
 .coaches__swiper {
   margin-top: 59px;
+  margin-left: 103px;
+  margin-right: 103px;
 }
 
 .coaches__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
 }
 
 .coaches__item {
   width: 100%;
+  max-width: 260px;
   position: relative;
 }
 
@@ -1548,6 +1557,50 @@ button,
 .coaches__direction {
   text-align: center;
   color: #b6bdcc;
+}
+
+.coaches__item__button-prev--mystyle {
+  left: 46px;
+  width: 16px;
+  height: 32px;
+  margin-top: -12px;
+}
+
+.coaches__item__button-prev--mystyle::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 32px;
+  background-image: url("../img/coaches/button-swiper-prev.png");
+  background-size: 16px 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.coaches__item__button-prev--mystyle::after {
+  display: none;
+}
+
+.coaches__item__button-next--mystyle {
+  right: 46px;
+  width: 16px;
+  height: 32px;
+  margin-top: -12px;
+}
+
+.coaches__item__button-next--mystyle::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 32px;
+  background-image: url("../img/coaches/button-swiper-next.png");
+  background-size: 16px 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.coaches__item__button-next--mystyle::after {
+  display: none;
 }
 
 /* @mixin hover-focus {
@@ -2019,9 +2072,6 @@ button,
   }
 
   .coaches__list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
     margin-left: 55px;
     margin-right: 55px;
   }
@@ -2305,10 +2355,6 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     margin-left: 47px;
     margin-right: 47px;
   }

@@ -2,7 +2,54 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {setupVideo} from './modules/video';
 import {showCard} from './modules/tuch-event';
 
+
 // ---------------------------------
+
+
+// const determineWidthScreen = () => {
+//   const pageWidth = document.documentElement.scrollWidth;
+//   if (pageWidth >= 1366) {
+//     return {
+//       loop: true,
+//       slidesPerView: 4,
+//       spaceBetween: 40,
+//       navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//       },
+//     };
+//   } else if (pageWidth >= 768 && pageWidth < 1366) {
+//     return {
+//       loop: true,
+//       slidesPerView: 2,
+//       spaceBetween: 30,
+//       navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//       },
+//     };
+//   } else if (pageWidth < 767) {
+//     return {
+//       loop: true,
+//       slidesPerView: 1,
+//       spaceBetween: 0,
+//       navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//       },
+//     };
+//   }
+// };
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 40,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -16,6 +63,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   setupVideo();
   showCard();
+  swiper();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

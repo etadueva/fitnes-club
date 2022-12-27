@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <meta name="description" content="Фитнес клуб">
     <title>Фитнес клуб</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -251,7 +252,7 @@
             </div>
           </section>
           <section class="coaches">
-            <div class="coaches__wrapper container">
+            <div class="coaches__wrapper container coaches__wrapper--swiper">
               <h2 class="coaches__title">Тренеры</h2>
               <div class="coaches__swiper swiper">
                 <ul class="coaches__list swiper-wrapper">
@@ -368,9 +369,9 @@
                     </div>
                   </li>
                 </ul>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
               </div>
+              <div class="swiper-button-prev coaches__item__button-prev--mystyle"></div>
+              <div class="swiper-button-next coaches__item__button-next--mystyle"></div>
             </div>
           </section>
         </main>
@@ -379,6 +380,7 @@
         </footer>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
