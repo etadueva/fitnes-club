@@ -284,26 +284,34 @@
     padding-top: 47px;
   }
 
+  .coaches__wrapper {
+    padding-bottom: 100px;
+
+    &--swiper {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .coaches__title {
     font-size: 42px;
     text-align: center;
     letter-spacing: 1px;
     padding-right: 6px;
+    margin-left: 0;
   }
 
   .coaches__swiper {
     margin-top: 40px;
-  }
-
-  .coaches__list {
-    // gap: 30px;
-    margin-left: 55px;
-    margin-right: 55px;
+    margin-left: 101px;
+    margin-right: 101px;
   }
 
   .coaches__item {
+    min-width: 268px;
+    max-width: 500px;
     &::before {
-      padding-top: 109%;
+      padding-top: 110%;
     }
   }
 
@@ -314,16 +322,32 @@
   .coaches__button-cover {
     padding-left: 13px;
   }
+
+  .coaches__item__button-prev {
+    &--mystyle {
+      left: 44px;
+      margin-top: -30px;
+    }
+  }
+
+  .coaches__item__button-next {
+    &--mystyle {
+      right: 44px;
+      margin-top: -30px;
+    }
+  }
 }
 
 @include tablet {
   .coaches__item-cover {
-    &--three {
+    &--three,
+    &--seven {
       background-size: 268px 476px;
       background-position: 0 -32px;
     }
 
-    &--four {
+    &--four,
+    &--eight {
       background-size: 345px 518px;
       background-position: -39px -52px;
     }
@@ -337,9 +361,6 @@
 
   .coaches__list {
     display: flex;
-    // flex-direction: column;
-    margin-left: 47px;
-    margin-right: 47px;
   }
 
   .coaches__title {
@@ -347,11 +368,19 @@
 
   }
 
+  .coaches__wrapper {
+    padding-bottom: 100px;
+  }
+
   .coaches__swiper {
     margin-top: 49px;
+    margin-left: 47px;
+    margin-right: 47px;
   }
 
   .coaches__item {
+    min-width: 100px;
+    max-width: 675px;
     &::before {
       padding-top: 121%;
     }
@@ -370,11 +399,42 @@
   .coaches__content-item {
     margin-left: 17px;
   }
+
+  .coaches__item__button-prev {
+    &--mystyle {
+      left: 15px;
+      width: 10px;
+      height: 19px;
+      margin-top: -22px;
+
+      &::before {
+        width: 10px;
+        height: 19px;
+        background-size: 10px 19px;
+      }
+    }
+  }
+
+  .coaches__item__button-next {
+    &--mystyle {
+      right: 15px;
+      width: 10px;
+      height: 19px;
+      margin-top: -22px;
+
+      &::before {
+        width: 10px;
+        height: 19px;
+        background-size: 10px 19px;
+      }
+    }
+  }
 }
 
 @include mobile {
   .coaches__item-cover {
-    &--three {
+    &--three,
+    &--seven {
       background-size: 226px 443px;
       background-position: 0 -29px;
     }
