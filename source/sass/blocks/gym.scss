@@ -275,6 +275,8 @@
   .gym__media {
     margin-top: 33px;
     width: 100%;
+    padding-bottom: 65%;
+    margin-bottom: 68px;
 
     &::after {
       display: none;
@@ -288,19 +290,18 @@
   }
 
   .gym__video-wrapper {
-    position: relative;
-    margin-top: 39px;
+    position: absolute;
     margin-left: 0;
-    margin-bottom: 71px;
     width: 100%;
     left: 0;
+    bottom: 0;
 
     &--image-enabled {
       padding-bottom: 52%;
     }
 
     &--video-enabled {
-      min-height: 39%;
+      height: 32%;
     }
   }
 

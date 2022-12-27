@@ -1,7 +1,8 @@
 .promo {
   background-color: $color-default-white;
-  padding-top: 52px;
+  padding-top: 53px;
   padding-bottom: 60px;
+  margin-top: -1px;
 }
 
 .promo__wrapper {
@@ -146,7 +147,7 @@
 
 @include tablet-width-max {
   .promo {
-    padding-top: 47px;
+    padding-top: 48px;
     margin-top: -1px;
   }
 
@@ -231,7 +232,7 @@
 
 @include mobile-width-max {
   .promo {
-    padding-top: 27px;
+    padding-top: 24px;
     padding-bottom: 40px;
   }
 

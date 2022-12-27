@@ -932,8 +932,9 @@ button,
 
 .promo {
   background-color: #ffffff;
-  padding-top: 52px;
+  padding-top: 53px;
   padding-bottom: 60px;
+  margin-top: -1px;
 }
 
 .promo__wrapper {
@@ -1087,6 +1088,7 @@ button,
   background: -webkit-gradient(linear, left bottom, left top, color-stop(7%, rgb(255, 255, 255)), color-stop(7%, rgb(232, 232, 232)));
   background: -o-linear-gradient(bottom, rgb(255, 255, 255) 7%, rgb(232, 232, 232) 7%);
   background: linear-gradient(0deg, rgb(255, 255, 255) 7%, rgb(232, 232, 232) 7%);
+  margin-top: -1px;
 }
 
 .season-tickets__tabs-item {
@@ -1337,7 +1339,7 @@ button,
 
 .season-tickets__wrapper {
   position: relative;
-  padding-top: 120px;
+  padding-top: 121px;
   padding-bottom: 190px;
 }
 
@@ -1797,7 +1799,7 @@ button,
   }
 
   .promo {
-    padding-top: 47px;
+    padding-top: 48px;
     margin-top: -1px;
   }
 
@@ -1890,7 +1892,7 @@ button,
   }
 
   .season-tickets__wrapper {
-    padding-top: 95px;
+    padding-top: 96px;
     padding-bottom: 111px;
   }
 
@@ -2142,6 +2144,8 @@ button,
   .gym__media {
     margin-top: 33px;
     width: 100%;
+    padding-bottom: 65%;
+    margin-bottom: 68px;
   }
 
   .gym__media::after {
@@ -2153,12 +2157,11 @@ button,
   }
 
   .gym__video-wrapper {
-    position: relative;
-    margin-top: 39px;
+    position: absolute;
     margin-left: 0;
-    margin-bottom: 71px;
     width: 100%;
     left: 0;
+    bottom: 0;
   }
 
   .gym__video-wrapper--image-enabled {
@@ -2166,7 +2169,7 @@ button,
   }
 
   .gym__video-wrapper--video-enabled {
-    min-height: 39%;
+    height: 32%;
   }
 
   .gym__video-background {
@@ -2179,7 +2182,7 @@ button,
   }
 
   .promo {
-    padding-top: 27px;
+    padding-top: 24px;
     padding-bottom: 40px;
   }
 
@@ -2200,7 +2203,7 @@ button,
   }
 
   .season-tickets__wrapper {
-    padding-top: 51px;
+    padding-top: 52px;
     padding-bottom: 71px;
   }
 
@@ -2264,7 +2267,7 @@ button,
 
   .season-tickets__item {
     padding-bottom: 47px;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
   }
 
   .season-tickets__item--1::before {

@@ -1,5 +1,6 @@
 .season-tickets {
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 7%, rgba(232, 232, 232, 1) 7%);
+  margin-top: -1px;
 }
 
 .season-tickets__tabs-item {
@@ -228,7 +229,7 @@
 
 .season-tickets__wrapper {
   position: relative;
-  padding-top: 120px;
+  padding-top: 121px;
   padding-bottom: 190px;
 }
 
@@ -264,7 +265,7 @@
   }
 
   .season-tickets__wrapper {
-    padding-top: 95px;
+    padding-top: 96px;
     padding-bottom: 111px;
   }
 
@@ -364,7 +365,7 @@
 
 @include mobile-width-max {
   .season-tickets__wrapper {
-    padding-top: 51px;
+    padding-top: 52px;
     padding-bottom: 71px;
   }
 
@@ -428,7 +429,7 @@
 
   .season-tickets__item {
     padding-bottom: 47px;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
 
     &--1 {
       &::before {
