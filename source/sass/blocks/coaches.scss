@@ -114,6 +114,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: $color-silver;
 
   &--first,
   &--five {
@@ -188,6 +189,7 @@
 
 .coaches__direction {
   text-align: center;
+  color: $color-spindle;
 }
 
 @include desktop {
@@ -195,13 +197,13 @@
     &--first,
     &--five {
       background-size: 260px 390px;
-      background-position: 0 -38px;
+      background-position: 0 -39px;
     }
 
     &--two,
     &--six {
       background-size: 312px 468px;
-      background-position: -49px -34px;
+      background-position: -48px -36px;
     }
 
     &--three,
@@ -213,14 +215,14 @@
     &--four,
     &--eight {
       background-size: 354px 530px;
-      background-position: -47px -55px;
+      background-position: -48px -57px;
     }
   }
 }
 
 @include tablet-width-max {
   .coaches {
-    padding-top: 49px;
+    padding-top: 47px;
   }
 
   .coaches__title {

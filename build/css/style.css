@@ -807,6 +807,8 @@ button,
   background-color: #ffffff;
   padding-top: 120px;
   padding-bottom: 120px;
+  -webkit-box-shadow: inset 0 4px 4px rgba(1, 28, 64, 0.25);
+  box-shadow: inset 0 4px 4px rgba(1, 28, 64, 0.25);
 }
 
 .gym__wrapper {
@@ -1477,6 +1479,7 @@ button,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #bbbbbb;
 }
 
 .coaches__item-cover--first,
@@ -1544,6 +1547,7 @@ button,
 
 .coaches__direction {
   text-align: center;
+  color: #b6bdcc;
 }
 
 /* @mixin hover-focus {
@@ -1711,6 +1715,8 @@ button,
   .gym {
     padding-top: 100px;
     padding-bottom: 100px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 
   .gym__wrapper {
@@ -1897,7 +1903,7 @@ button,
   }
 
   .season-tickets__wrapper {
-    padding-top: 96px;
+    padding-top: 95px;
     padding-bottom: 111px;
   }
 
@@ -1998,7 +2004,7 @@ button,
   }
 
   .coaches {
-    padding-top: 49px;
+    padding-top: 47px;
   }
 
   .coaches__title {
@@ -2355,13 +2361,13 @@ button,
   .coaches__item-cover--first,
   .coaches__item-cover--five {
     background-size: 260px 390px;
-    background-position: 0 -38px;
+    background-position: 0 -39px;
   }
 
   .coaches__item-cover--two,
   .coaches__item-cover--six {
     background-size: 312px 468px;
-    background-position: -49px -34px;
+    background-position: -48px -36px;
   }
 
   .coaches__item-cover--three,
@@ -2373,7 +2379,7 @@ button,
   .coaches__item-cover--four,
   .coaches__item-cover--eight {
     background-size: 354px 530px;
-    background-position: -47px -55px;
+    background-position: -48px -57px;
   }
 }
 
