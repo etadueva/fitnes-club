@@ -126,9 +126,14 @@
   }
 }
 
+.promo__image-wrapper {
+  height: 100%;
+  background-color: $color-midnight-express;
+}
+
 .promo__image {
   width: 100%;
-  height: 100%;
+  padding-top: 76%;
   background-image: url("../img/promo/promo-image.jpg");
   background-size: cover;
   background-position: center;
