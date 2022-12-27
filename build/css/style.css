@@ -2016,6 +2016,14 @@ button,
   .coaches__item::before {
     padding-top: 109%;
   }
+
+  .coaches__item-content {
+    padding-left: 2px;
+  }
+
+  .coaches__button-cover {
+    padding-left: 13px;
+  }
 }
 
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
@@ -2274,6 +2282,46 @@ button,
   .season-tickets__tabs-item--3:checked ~ .season-tickets__tabs-title--3::after {
     bottom: -15px;
   }
+
+  .coaches {
+    padding-top: 30px;
+  }
+
+  .coaches__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 47px;
+    margin-right: 47px;
+  }
+
+  .coaches__title {
+    font-size: 32px;
+  }
+
+  .coaches__swiper {
+    margin-top: 49px;
+  }
+
+  .coaches__item::before {
+    padding-top: 121%;
+  }
+
+  .coaches__title-item--content {
+    margin-top: 36px;
+  }
+
+  .coaches__item-content {
+    padding-left: 10px;
+  }
+
+  .coaches__content-item {
+    margin-left: 17px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -2335,6 +2383,16 @@ button,
   .promo__image {
     background-position: -10px 0px;
   }
+
+  .coaches__item-cover--three {
+    background-size: 268px 476px;
+    background-position: 0 -32px;
+  }
+
+  .coaches__item-cover--four {
+    background-size: 345px 518px;
+    background-position: -39px -52px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 320px) {
@@ -2351,6 +2409,11 @@ button,
   .promo__image {
     background-size: 525px 337px;
     background-position: -88px 0;
+  }
+
+  .coaches__item-cover--three {
+    background-size: 226px 443px;
+    background-position: 0 -29px;
   }
 }
 

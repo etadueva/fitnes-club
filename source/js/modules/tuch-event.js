@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll('.coaches__button-cover');
 const itemsContent = document.querySelectorAll('.coaches__item-content');
 
 const showCard = () => {
-  for (let i = 0; i <= buttons.length; i++) {
+  for (let i = 0; i <= (buttons.length - 1); i++) {
     let indexButton = i;
     let button = buttons[i];
     button.addEventListener('click', () => {
