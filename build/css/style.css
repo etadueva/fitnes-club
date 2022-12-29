@@ -1633,14 +1633,27 @@ button,
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 293px 1fr;
+  grid-template-columns: 1fr 293px 1fr;
+  row-gap: 131px;
 }
 
 .advantages__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 33px;
+  position: relative;
+}
+
+.advantages__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -55px;
+  width: 97%;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
 }
 
 .advantages__item--center {
@@ -1655,7 +1668,7 @@ button,
   margin-top: 29px;
   margin-left: auto;
   margin-right: auto;
-  width: 67%;
+  width: 82%;
   height: 90%;
   padding: 10px;
   -ms-grid-column: 2;
@@ -1668,27 +1681,12 @@ button,
   align-items: center;
 }
 
-.advantages__item--left .advantages__item-number {
-  margin-left: 33px;
+.advantages__item--center::after {
+  display: none;
 }
 
-.advantages__item--upper {
-  padding-bottom: 78px;
-  position: relative;
-}
-
-.advantages__item--upper::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: calc(100% - 1px);
-  height: 2px;
-  background-color: rgba(209, 10, 66, 0.2);
-}
-
-.advantages__item--lower {
-  padding-top: 53px;
+.advantages__item--none-border::after {
+  display: none;
 }
 
 .advantages__item-number {
@@ -2304,11 +2302,18 @@ button,
 
   .advantages__list {
     margin: 0;
+    margin-top: 33px;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 10px;
-    -moz-column-gap: 10px;
-    column-gap: 10px;
+    -webkit-column-gap: 28px;
+    -moz-column-gap: 28px;
+    column-gap: 28px;
+    row-gap: 23px;
+  }
+
+  .advantages__item {
+    margin-left: 0;
+    margin-bottom: 20px;
   }
 
   .advantages__item--center {
@@ -2317,39 +2322,16 @@ button,
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     width: 65%;
-    height: 100%;
-  }
-
-  .advantages__item--left .advantages__item-number {
-    margin-left: 0;
-  }
-
-  .advantages__item--right {
-    margin-left: 10px;
-  }
-
-  .advantages__item--upper {
-    padding-bottom: 15px;
-  }
-
-  .advantages__item--upper::after {
-    display: none;
-  }
-
-  .advantages__item--upper .advantages__number {
-    margin-top: 31px;
-  }
-
-  .advantages__item--lower {
-    padding-top: 56px;
-  }
-
-  .advantages__item--lower .advantages__item-title {
+    height: 98%;
+    min-height: 240px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
+    margin-bottom: 5px;
   }
 
-  .advantages__item--lower .advantages__item-text {
-    margin-top: 15px;
+  .advantages__item::after {
+    display: none;
   }
 
   .advantages__number {
@@ -2367,7 +2349,7 @@ button,
 
   .advantages__item-title {
     font-size: 20px;
-    margin-top: 46px;
+    margin-top: 14px;
   }
 
   .advantages__item-title--center {
@@ -2723,6 +2705,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 32px;
+    row-gap: 21px;
   }
 
   .advantages__item {
@@ -2731,41 +2714,13 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 0;
-  }
-
-  .advantages__item--upper {
-    margin-bottom: 21px;
-  }
-
-  .advantages__item--upper .advantages__number {
-    margin-top: 0;
-  }
-
-  .advantages__item--lower {
-    margin-top: 27px;
-  }
-
-  .advantages__item--lower .advantages__item-text {
-    margin-top: 6px;
-  }
-
-  .advantages__item--lower .advantages__item-description {
-    margin: 0 46px;
-  }
-
-  .advantages__item--lower-two {
-    margin-top: 22px;
-  }
-
-  .advantages__item--right {
-    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .advantages__item--center {
     margin: 0;
+    margin-bottom: 5px;
     width: 100%;
-    height: auto;
-    padding-bottom: 43px;
   }
 
   .advantages__title {
@@ -2803,7 +2758,7 @@ button,
 
   .advantages__item-description {
     text-align: center;
-    margin: 0 45px;
+    margin: 0 46px;
   }
 
   .advantages__item-description--center {
@@ -2812,7 +2767,7 @@ button,
   }
 
   .advantages__number--center {
-    margin-top: 37px;
+    margin-top: 38px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
