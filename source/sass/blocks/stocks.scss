@@ -1,0 +1,86 @@
+.stocks {
+  margin-top: -1px;
+  background-color: $color-default-white;
+  padding-top: 117px;
+}
+
+.stocks__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stocks__item-link {
+  display: block;
+}
+
+.stocks__title {
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 75%;
+  letter-spacing: 2px;
+  margin-left: 103px;
+  margin-right: 103px;
+  color: $color-sapphire;
+}
+
+.stocks__main-stock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1 / 3;
+}
+
+.stocks__main-stock-text {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: $color-torch-red;
+  color: $color-default-white;
+  padding: 0 45px;
+}
+
+.stocks__main-stock-name {
+  font-size: 28px;
+  line-height: 156%;
+  font-weight: 700;
+  margin-top: 35px;
+}
+
+.stocks__main-stock-price {
+  font-size: 70px;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+.stocks__main-stock-description {
+  font-size: 18px;
+  line-height: 140%;
+  margin-top: 41px;
+}
+
+.stocks__main-stock-link {
+  display: block;
+  color: $color-default-white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 112%;
+  letter-spacing: calc(1em/20);
+  text-transform: uppercase;
+  margin-bottom: 44px;
+  margin-top: auto;
+  margin-right: auto;
+  border-bottom: 1px solid $color-default-white;
+
+  @include hover-focus {
+    outline: 1px solid $color-default-white;
+  }
+}
+
+.stocks__main-stock-image {
+  padding-top: 165%;
+}

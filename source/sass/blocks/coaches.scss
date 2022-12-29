@@ -203,7 +203,7 @@
   color: $color-spindle;
 }
 
-.coaches__item__button-prev {
+.coaches__item-button-prev {
   &--mystyle {
     left: 46px;
     width: 16px;
@@ -227,7 +227,7 @@
   }
 }
 
-.coaches__item__button-next {
+.coaches__item-button-next {
   &--mystyle {
     right: 46px;
     width: 16px;
@@ -323,14 +323,14 @@
     padding-left: 13px;
   }
 
-  .coaches__item__button-prev {
+  .coaches__item-button-prev {
     &--mystyle {
       left: 44px;
       margin-top: -30px;
     }
   }
 
-  .coaches__item__button-next {
+  .coaches__item-button-next {
     &--mystyle {
       right: 44px;
       margin-top: -30px;
@@ -400,7 +400,7 @@
     margin-left: 17px;
   }
 
-  .coaches__item__button-prev {
+  .coaches__item-button-prev {
     &--mystyle {
       left: 15px;
       width: 10px;
@@ -415,7 +415,7 @@
     }
   }
 
-  .coaches__item__button-next {
+  .coaches__item-button-next {
     &--mystyle {
       right: 15px;
       width: 10px;
