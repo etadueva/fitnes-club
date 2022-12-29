@@ -2,19 +2,58 @@
   margin-top: -1px;
   background-color: $color-default-white;
   padding-top: 117px;
+  padding-bottom: 117px;
 }
 
 .stocks__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
+  gap: 40px;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+.stocks__item {
+  display: flex;
+  flex-direction: column;
+  border: 7px solid transparent;
+  border-image: linear-gradient(120deg, #0041CA 0%, #D10A42 100%);
+  -moz-border-image: -moz-linear-gradient(120deg, #0041CA 0%, #D10A42 100%);
+  -webkit-border-image: -webkit-linear-gradient(120deg, #0041CA 0%, #D10A42 100%);
+  border-image-slice: 1;
+  padding: 20px 28px;
+}
+
+.stocks__item-title {
+  margin: 0;
+  font-size: 26px;
+  line-height: 150%;
+  font-weight: 700;
+  color: $color-sapphire;
+}
+
+.stocks__item-description {
+  color: $color-sapphire;
+  line-height: 150%;
+}
+
 .stocks__item-link {
   display: block;
+  color: $color-sapphire;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: calc(1em/20);
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  margin-top: auto;
+  margin-right: auto;
+  border-bottom: 1px solid $color-sapphire;
+
+  @include hover-focus {
+    outline: 1px solid $color-sapphire;
+  }
 }
 
 .stocks__title {
