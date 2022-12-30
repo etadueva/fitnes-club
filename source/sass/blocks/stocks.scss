@@ -122,4 +122,161 @@
 
 .stocks__main-stock-image {
   padding-top: 165%;
+  background-color: $color-dodger-blue;
+  background-image: url('../img/stocks/stocks-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url('../img/stocks/stocks-image@2x.jpg');
+  }
+}
+
+@include desktop {
+  .stocks__main-stock-image {
+    background-size: 432px 648px;
+    background-position: -32px -180px;
+  }
+}
+
+@include tablet-width-max {
+  .stocks {
+    padding-top: 66px;
+    padding-bottom: 55px;
+  }
+
+  .stocks__title {
+    font-size: 42px;
+    padding-right: 8px;
+  }
+
+  .stocks__list {
+    margin-top: 50px;
+    gap: 28px;
+  }
+
+  .stocks__main-stock {
+    grid-column: 1 / -1;
+    grid-template-columns: 41% 59%;
+  }
+
+  .stocks__main-stock-text {
+    padding: 0 44px;
+  }
+
+  .stocks__main-stock-image {
+    padding-top: 116%;
+  }
+
+  .stocks__main-stock-price {
+    margin-top: 0;
+    line-height: 75%;
+  }
+
+  .stocks__main-stock-description {
+    margin-top: 29px;
+  }
+
+  .stocks__main-stock-link {
+    margin-bottom: 47px;
+  }
+
+  .stocks__item {
+    min-height: 212px;
+  }
+
+  .stocks__item-description {
+    &--one {
+      padding-right: 28px;
+    }
+  }
+
+  .stocks__item-link {
+    margin-bottom: 8px;
+  }
+}
+
+@include tablet {
+  .stocks__main-stock-image {
+    background-size: 475px 712px;
+    background-position: -9px -201px;
+  }
+}
+
+@include mobile-width-max {
+  .stocks__title {
+    font-size: 32px;
+    margin-top: 4px;
+    letter-spacing: calc(1em / 34);
+  }
+
+  .stocks__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .stocks__main-stock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stocks__main-stock-text {
+    padding: 0;
+    text-align: center;
+  }
+
+  .stocks__main-stock-name {
+    margin-top: 34px;
+  }
+
+  .stocks__main-stock-price {
+    margin-top: 4px;
+  }
+
+  .stocks__main-stock-description {
+    margin-top: 21px;
+  }
+
+  .stocks__main-stock-link {
+    margin-left: auto;
+    margin-top: 32px;
+    margin-bottom: 45px;
+  }
+
+  .stocks__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .stocks__main-stock-image {
+    padding-top: 103%;
+  }
+
+  .stocks__item {
+    text-align: center;
+    padding: 29px 28px;
+  }
+
+  .stocks__item-description {
+    margin-top: 3px;
+    line-height: 139%;
+
+    &--one {
+      padding-right: 0;
+    }
+  }
+
+  .stocks__item-link {
+    margin-left: auto;
+    margin-bottom: 11px;
+  }
+}
+
+@include mobile {
+  .stocks__main-stock-image {
+    background-size: 346px 520px;
+    background-position: -5px -153px;
+  }
 }
