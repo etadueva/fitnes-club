@@ -27,6 +27,15 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+const swiperReviews = new Swiper('.swiper-reviews', {
+  slidesPerView: 1,
+  spaceBetween: 5,
+  navigation: {
+    nextEl: '.swiper-button-next-reviews',
+    prevEl: '.swiper-button-prev-reviews',
+  },
+});
+
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
@@ -40,6 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
   setupVideo();
   showCard();
   swiper();
+  swiperReviews();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

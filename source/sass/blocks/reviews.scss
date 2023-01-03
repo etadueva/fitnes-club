@@ -1,0 +1,120 @@
+.reviews {
+  background-color: $color-default-white;
+  margin-top: -1px;
+}
+
+.reviews__wrapper {
+  padding-top: 8px;
+  padding-bottom: 103px;
+  position: relative;
+}
+
+.reviews__swiper {
+  margin-top: 42px;
+  width: 48%;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.reviews__title {
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: calc(1em / 30);
+  margin: 0;
+  padding-left: 9px;
+}
+
+.reviews__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reviews__item {
+  color: $color-default-white;
+  background-color: $color-resolution-blue;
+  padding: 62px;
+  padding-right: 58px;
+  padding-bottom: 56px;
+  display: flex;
+}
+
+.reviews__user-photo {
+  width: 66%;
+  padding-top: 18%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: url('../img/reviews/review-image-user.jpg');
+  background-size: 126px 174px;
+  background-position: -26px -17px;
+  background-repeat: no-repeat;
+}
+
+.reviews__user-info {
+  margin-left: 28px;
+}
+
+.reviews__user-text {
+  display: block;
+  margin-top: 15px;
+  line-height: 144%;
+}
+
+.reviews__user-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 90%;
+  margin: 0;
+}
+
+.reviews__button-prev-reviews {
+  &--mystyle {
+    position: absolute;
+    left: 347px;
+    width: 16px;
+    height: 32px;
+    margin-top: -154px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 32px;
+      background-image: url('../img/coaches/button-swiper-prev.png');
+      background-size: 16px 32px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.reviews__button-next-reviews {
+  &--mystyle {
+    position: absolute;
+    right: 347px;
+    width: 16px;
+    height: 32px;
+    margin-top: -154px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 32px;
+      background-image: url('../img/coaches/button-swiper-next.png');
+      background-size: 16px 32px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
