@@ -73,3 +73,24 @@
     margin-bottom: 35px;
   }
 }
+
+@include mobile-width-max {
+  .form__group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+  }
+
+  .form__input {
+    min-width: 100%;
+  }
+
+  .form__button {
+    min-width: 100%;
+    margin-top: 8px;
+  }
+
+  .form__meaning {
+    margin-bottom: -30px;
+  }
+}

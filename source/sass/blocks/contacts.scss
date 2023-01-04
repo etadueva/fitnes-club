@@ -62,3 +62,16 @@
     margin-bottom: 24px;
   }
 }
+
+@include mobile-width-max {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__list {
+    &--contact {
+      padding-left: 0;
+    }
+  }
+}
