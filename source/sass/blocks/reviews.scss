@@ -25,6 +25,7 @@
   letter-spacing: calc(1em / 30);
   margin: 0;
   padding-left: 9px;
+  color: $color-sapphire;
 }
 
 .reviews__list {
@@ -38,7 +39,9 @@
   padding: 62px;
   padding-right: 58px;
   padding-bottom: 56px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 80px auto;
+  column-gap: 28px;
 }
 
 .reviews__user-photo {
@@ -51,6 +54,7 @@
   background-size: 126px 174px;
   background-position: -26px -17px;
   background-repeat: no-repeat;
+  grid-row: 1 / 3;
 }
 
 .reviews__user-info {
@@ -117,6 +121,132 @@
 
     &::after {
       display: none;
+    }
+  }
+}
+
+@include tablet-width-max {
+  .reviews__title {
+    font-size: 42px;
+    padding-left: 0;
+    padding-right: 4px;
+  }
+
+  .reviews__wrapper {
+    padding-top: 40px;
+    padding-bottom: 85px;
+  }
+
+  .reviews__swiper {
+    margin-top: 29px;
+    margin-left: 56px;
+    margin-right: 56px;
+    width: auto;
+  }
+
+  .reviews__user-photo {
+    width: 80px;
+    height: 80px;
+    padding-top: 0;
+  }
+
+  .reviews__user-info {
+    max-width: 100%;
+  }
+
+  .reviews__item {
+    padding-left: 65px;
+    padding-top: 61px;
+  }
+}
+
+@include mobile-width-max {
+  .reviews__title {
+    font-size: 32px;
+  }
+
+  .reviews__wrapper {
+    padding-top: 10px;
+    padding-bottom: 55px;
+  }
+
+  .reviews__swiper {
+    margin-top: 30px;
+    margin-left: 46px;
+    margin-right: 46px;
+  }
+
+  .reviews__item {
+    padding: 40px 23px 34px;
+    column-gap: 15px;
+    grid-template-columns: 86px auto;
+  }
+
+  .reviews__button-prev {
+    &--mystyle {
+      left: -32px;
+    }
+  }
+
+  .reviews__button-next {
+    &--mystyle {
+      right: -32px;
+    }
+  }
+
+  .reviews__user-photo {
+    width: 68px;
+    min-width: 68px;
+    height: 68px;
+    margin-left: 19px;
+    background-size: 106px 148px;
+    background-position: -21px -14px;
+    grid-row: 1 / 2;
+  }
+
+  .reviews__user-info {
+    margin: 0;
+  }
+
+  .reviews__user-name {
+    line-height: 125%;
+    margin-top: 9px;
+  }
+
+  .reviews__user-text {
+    margin-top: 15px;
+    text-align: center;
+    line-height: 140%;
+    grid-column: 1 / -1;
+  }
+
+  .reviews__button-prev {
+    &--mystyle {
+      width: 10px;
+      height: 19px;
+      left: -31px;
+      top: calc(50% - 9px);
+
+      &::before {
+        width: 10px;
+        height: 19px;
+        background-size: 10px 19px;
+      }
+    }
+  }
+
+  .reviews__button-next {
+    &--mystyle {
+      width: 10px;
+      height: 19px;
+      right: -31px;
+      top: calc(50% - 9px);
+
+      &::before {
+        width: 10px;
+        height: 19px;
+        background-size: 10px 19px;
+      }
     }
   }
 }
