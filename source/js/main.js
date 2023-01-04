@@ -5,7 +5,7 @@ import {showCard} from './modules/tuch-event';
 
 // ---------------------------------
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-coaches', {
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',

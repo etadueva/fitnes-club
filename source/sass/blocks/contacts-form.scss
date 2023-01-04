@@ -1,0 +1,76 @@
+.contacts-form {
+  margin-top: -1px;
+  background-color: $color-default-white;
+}
+
+.contacts-form__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+}
+
+.contacts-form__form-wrapper {
+  background-color: $color-sapphire;
+  color: $color-default-white;
+  padding-left: 102px;
+  padding-right: 10px;
+}
+
+.contacts-form__contacts-wrapper {
+  color: $color-sapphire;
+  padding-right: 103px;
+  padding-left: 120px;
+  padding-bottom: 46px;
+  border-top: 1px solid $color-light-slate-grey;
+}
+
+.contacts-form__title {
+  font-family: $ff-alumni;
+  font-size: 54px;
+  margin: 0;
+  letter-spacing: calc(1em / 33);
+
+  &--form {
+    font-weight: 800;
+    line-height: 156%;
+    margin-top: 57px;
+  }
+
+  &--contacts {
+    font-weight: 600;
+    line-height: 100%;
+    margin-top: 64px;
+  }
+}
+
+@include tablet-width-max {
+  .contacts-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .contacts-form__form-wrapper {
+    padding: 10px 163px 33px 131px;
+  }
+
+  .contacts-form__contacts-wrapper {
+    padding-left: 133px;
+    padding-right: 133px;
+    padding-bottom: 40px;
+  }
+
+  .contacts-form__title {
+    font-size: 42px;
+    margin-left: 2px;
+
+    &--form {
+      font-weight: 700;
+      margin-top: 43px;
+    }
+
+    &--contacts {
+      margin-left: 0;
+    }
+  }
+}

@@ -6,14 +6,14 @@
 .reviews__wrapper {
   padding-top: 8px;
   padding-bottom: 103px;
-  position: relative;
 }
 
 .reviews__swiper {
-  margin-top: 42px;
+  margin-top: 24px;
   width: 48%;
   margin-left: 300px;
   margin-right: 300px;
+  position: relative;
 }
 
 .reviews__title {
@@ -43,8 +43,9 @@
 
 .reviews__user-photo {
   width: 66%;
+  min-width: 80px;
   padding-top: 18%;
-  height: 100%;
+  height: 78px;
   border-radius: 50%;
   background-image: url('../img/reviews/review-image-user.jpg');
   background-size: 126px 174px;
@@ -54,6 +55,7 @@
 
 .reviews__user-info {
   margin-left: 28px;
+  max-width: 329px;
 }
 
 .reviews__user-text {
@@ -69,13 +71,13 @@
   margin: 0;
 }
 
-.reviews__button-prev-reviews {
+.reviews__button-prev {
   &--mystyle {
     position: absolute;
-    left: 347px;
+    left: -56px;
+    top: calc(50% - 16px);
     width: 16px;
     height: 32px;
-    margin-top: -154px;
 
     &::before {
       content: '';
@@ -94,13 +96,13 @@
   }
 }
 
-.reviews__button-next-reviews {
+.reviews__button-next {
   &--mystyle {
     position: absolute;
-    right: 347px;
+    right: -56px;
+    top: calc(50% - 16px);
     width: 16px;
     height: 32px;
-    margin-top: -154px;
 
     &::before {
       content: '';
