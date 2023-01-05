@@ -218,6 +218,7 @@
   margin-top: 34px;
   letter-spacing: calc(1em / 22);
   padding: 10px;
+  color: $color-sapphire;
 
   @include focus {
     background-image: linear-gradient(137deg, rgba(209,10,66,1) 5%, rgba(0,53,159,1) 95%);

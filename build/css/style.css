@@ -821,6 +821,7 @@ button,
 
 .gym__text {
   margin-left: 60px;
+  color: #102654;
 }
 
 .gym__title {
@@ -1335,6 +1336,7 @@ button,
   margin-top: 34px;
   letter-spacing: 0.0454545455em;
   padding: 10px;
+  color: #102654;
 }
 
 .season-tickets__link.focus-visible:focus {
@@ -1387,6 +1389,7 @@ button,
   margin-left: 104px;
   display: block;
   line-height: 80%;
+  color: #102654;
 }
 
 .coaches__wrapper {
