@@ -581,6 +581,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -721,12 +722,12 @@ button,
   display: flex;
   width: 100%;
   color: #ffffff;
-  margin-right: 13px;
+  margin-right: 16px;
 }
 
 .home-page__list {
   padding: 0;
-  margin-top: 140px;
+  margin-top: 142px;
   margin-left: 43px;
   list-style-type: none;
   font-size: 14px;
@@ -779,7 +780,7 @@ button,
   max-width: 266px;
   margin-top: 19px;
   margin-right: 0;
-  letter-spacing: 0.0344827586em;
+  letter-spacing: 0.037037037em;
 }
 
 .home-page__link {
@@ -1364,6 +1365,13 @@ button,
   outline: 1px solid #d10a42;
 }
 
+.season-tickets__tabs-item--1:hover + .season-tickets__tabs-title--1,
+.season-tickets__tabs-item--2:hover + .season-tickets__tabs-title--2,
+.season-tickets__tabs-item--3:hover + .season-tickets__tabs-title--3 {
+  outline: 1px solid #d10a42;
+  cursor: pointer;
+}
+
 .coaches {
   background-color: #ffffff;
   margin-top: -1px;
@@ -1581,6 +1589,11 @@ button,
   display: none;
 }
 
+.coaches__item-button-prev--mystyle.focus-visible:focus {
+  -webkit-filter: brightness(0.1);
+  filter: brightness(0.1);
+}
+
 .coaches__item-button-next--mystyle {
   right: 46px;
   width: 16px;
@@ -1601,6 +1614,11 @@ button,
 
 .coaches__item-button-next--mystyle::after {
   display: none;
+}
+
+.coaches__item-button-next--mystyle.focus-visible:focus {
+  -webkit-filter: brightness(0.1);
+  filter: brightness(0.1);
 }
 
 .advantages {
@@ -1807,7 +1825,7 @@ button,
   border-image: linear-gradient(120deg, #0041CA 0%, #D10A42 100%);
   -webkit-border-image: -webkit-linear-gradient(120deg, #0041CA 0%, #D10A42 100%);
   border-image-slice: 1;
-  padding: 20px 28px;
+  padding: 18px 28px 20px;
 }
 
 .stocks__item-title {
@@ -1821,6 +1839,7 @@ button,
 .stocks__item-description {
   color: #102654;
   line-height: 150%;
+  margin-top: 1px;
 }
 
 .stocks__item-link {
@@ -1831,7 +1850,7 @@ button,
   line-height: 120%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   margin-top: auto;
   margin-right: auto;
   border-bottom: 1px solid #102654;
@@ -1850,6 +1869,7 @@ button,
   letter-spacing: 2px;
   margin-left: 103px;
   margin-right: 103px;
+  margin-bottom: 46px;
   color: #102654;
 }
 
@@ -1881,7 +1901,7 @@ button,
   font-size: 28px;
   line-height: 156%;
   font-weight: 700;
-  margin-top: 35px;
+  margin-top: 34px;
 }
 
 .stocks__main-stock-price {
@@ -1904,7 +1924,7 @@ button,
   line-height: 112%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 44px;
+  margin-bottom: 45px;
   margin-top: auto;
   margin-right: auto;
   border-bottom: 1px solid #ffffff;
@@ -1929,16 +1949,19 @@ button,
 }
 
 .reviews__wrapper {
-  padding-top: 8px;
-  padding-bottom: 106px;
+  padding-top: 7px;
+  padding-bottom: 104px;
 }
 
-.reviews__swiper {
-  margin-top: 24px;
+.reviews__swiper-wrapper {
+  position: relative;
   width: 48%;
   margin-left: 300px;
   margin-right: 300px;
-  position: relative;
+}
+
+.reviews__swiper {
+  margin-top: 26px;
 }
 
 .reviews__title {
@@ -1964,6 +1987,7 @@ button,
   padding: 62px;
   padding-right: 58px;
   padding-bottom: 56px;
+  padding-top: 60px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 80px auto;
@@ -1977,7 +2001,8 @@ button,
   width: 66%;
   min-width: 80px;
   padding-top: 18%;
-  height: 78px;
+  margin-top: 2px;
+  height: 80px;
   border-radius: 50%;
   background-image: url("../img/reviews/review-image-user.jpg");
   background-size: 126px 174px;
@@ -1995,7 +2020,7 @@ button,
 
 .reviews__user-text {
   display: block;
-  margin-top: 15px;
+  margin-top: 17px;
   line-height: 144%;
 }
 
@@ -2012,6 +2037,7 @@ button,
   top: calc(50% - 16px);
   width: 16px;
   height: 32px;
+  cursor: pointer;
 }
 
 .reviews__button-prev--mystyle::before {
@@ -2029,12 +2055,24 @@ button,
   display: none;
 }
 
+.reviews__button-prev--mystyle.focus-visible:focus {
+  -webkit-filter: brightness(0.1);
+  filter: brightness(0.1);
+}
+
+.reviews__button-prev--mystyle[aria-disabled=true].focus-visible:focus {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+  cursor: default;
+}
+
 .reviews__button-next--mystyle {
   position: absolute;
   right: -56px;
   top: calc(50% - 16px);
   width: 16px;
   height: 32px;
+  cursor: pointer;
 }
 
 .reviews__button-next--mystyle::before {
@@ -2050,6 +2088,17 @@ button,
 
 .reviews__button-next--mystyle::after {
   display: none;
+}
+
+.reviews__button-next--mystyle.focus-visible:focus {
+  -webkit-filter: brightness(0.1);
+  filter: brightness(0.1);
+}
+
+.reviews__button-next--mystyle[aria-disabled=true].focus-visible:focus {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+  cursor: default;
 }
 
 .contacts-form {
@@ -2092,13 +2141,13 @@ button,
 .contacts-form__title--form {
   font-weight: 800;
   line-height: 156%;
-  margin-top: 56px;
+  margin-top: 55px;
 }
 
 .contacts-form__title--contacts {
   font-weight: 600;
   line-height: 100%;
-  margin-top: 63px;
+  margin-top: 65px;
 }
 
 .form__group {
@@ -2165,7 +2214,20 @@ button,
 }
 
 .contacts__list--contact {
-  padding-left: 64px;
+  padding-left: 60px;
+  margin-left: 4px;
+  position: relative;
+}
+
+.contacts__list--contact::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 77%;
+  background-color: #74819C;
+  left: 0;
+  bottom: 24px;
 }
 
 .contacts__list--address {
@@ -2463,7 +2525,7 @@ button,
   }
 
   .promo__info {
-    padding: 43px 44px 50px;
+    padding: 43px 44px 52px;
   }
 
   .promo__title {
@@ -2812,6 +2874,10 @@ button,
     padding-top: 116%;
   }
 
+  .stocks__main-stock-name {
+    line-height: 164%;
+  }
+
   .stocks__main-stock-price {
     margin-top: 0;
     line-height: 75%;
@@ -2845,14 +2911,14 @@ button,
 
   .reviews__wrapper {
     padding-top: 40px;
-    padding-bottom: 85px;
+    padding-bottom: 83px;
   }
 
-  .reviews__swiper {
+  .reviews__swiper-wrapper {
+    width: auto;
     margin-top: 29px;
     margin-left: 56px;
     margin-right: 56px;
-    width: auto;
   }
 
   .reviews__user-photo {
@@ -2952,6 +3018,16 @@ button,
 
   .contacts__list--address {
     padding: 0;
+  }
+
+  .contacts__list--contact {
+    padding-left: 48px;
+    margin-left: 15px;
+  }
+
+  .contacts__list--contact::after {
+    height: 78%;
+    bottom: 32px;
   }
 
   .contacts__item {
@@ -3266,7 +3342,7 @@ button,
     left: 15px;
     width: 10px;
     height: 19px;
-    margin-top: -22px;
+    margin-top: -8px;
   }
 
   .coaches__item-button-prev--mystyle::before {
@@ -3279,7 +3355,7 @@ button,
     right: 15px;
     width: 10px;
     height: 19px;
-    margin-top: -22px;
+    margin-top: -8px;
   }
 
   .coaches__item-button-next--mystyle::before {
@@ -3311,7 +3387,7 @@ button,
 
   .advantages__item--center {
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     width: 100%;
   }
 
@@ -3321,7 +3397,7 @@ button,
   }
 
   .advantages__wrapper {
-    padding-top: 67px;
+    padding-top: 66px;
     padding-bottom: 64px;
   }
 
@@ -3340,7 +3416,7 @@ button,
   }
 
   .advantages__item-title {
-    margin-top: 7px;
+    margin-top: 6px;
   }
 
   .advantages__item-title--center {
@@ -3351,6 +3427,7 @@ button,
   .advantages__item-description {
     text-align: center;
     margin: 0 46px;
+    margin-top: 1px;
   }
 
   .advantages__item-description--center {
@@ -3369,6 +3446,7 @@ button,
     font-size: 32px;
     margin-top: 4px;
     letter-spacing: 0.0294117647em;
+    padding-right: 5px;
   }
 
   .stocks__list {
@@ -3398,15 +3476,15 @@ button,
   }
 
   .stocks__main-stock-name {
-    margin-top: 34px;
+    margin-top: 33px;
   }
 
   .stocks__main-stock-price {
-    margin-top: 4px;
+    margin-top: 2px;
   }
 
   .stocks__main-stock-description {
-    margin-top: 21px;
+    margin-top: 22px;
   }
 
   .stocks__main-stock-link {
@@ -3452,7 +3530,7 @@ button,
     padding-bottom: 55px;
   }
 
-  .reviews__swiper {
+  .reviews__swiper-wrapper {
     margin-top: 30px;
     margin-left: 46px;
     margin-right: 46px;
@@ -3480,6 +3558,7 @@ button,
     min-width: 68px;
     height: 68px;
     margin-left: 19px;
+    margin-top: 0;
     background-size: 106px 148px;
     background-position: -21px -14px;
     -ms-grid-row: 1;
@@ -3579,6 +3658,11 @@ button,
 
   .contacts__list--contact {
     padding-left: 0;
+    margin-left: 0;
+  }
+
+  .contacts__list--contact::after {
+    display: none;
   }
 }
 
@@ -3644,7 +3728,7 @@ button,
   }
 
   .promo__image {
-    background-position: -10px 0px;
+    background-position: -11px -1px;
   }
 
   .coaches__item-cover--three,
@@ -3661,7 +3745,7 @@ button,
 
   .stocks__main-stock-image {
     background-size: 475px 712px;
-    background-position: -9px -201px;
+    background-position: -3px -200px;
   }
 }
 
@@ -3737,12 +3821,44 @@ button,
     color: rgba(255, 255, 255, 0);
   }
 
+  .coaches__item-button-prev--mystyle:hover:not(.focus-visible) {
+    -webkit-filter: brightness(0.1);
+    filter: brightness(0.1);
+  }
+
+  .coaches__item-button-next--mystyle:hover:not(.focus-visible) {
+    -webkit-filter: brightness(0.1);
+    filter: brightness(0.1);
+  }
+
   .stocks__item-link:hover:not(.focus-visible) {
     outline: 1px solid #102654;
   }
 
   .stocks__main-stock-link:hover:not(.focus-visible) {
     outline: 1px solid #ffffff;
+  }
+
+  .reviews__button-prev--mystyle:hover:not(.focus-visible) {
+    -webkit-filter: brightness(0.1);
+    filter: brightness(0.1);
+  }
+
+  .reviews__button-prev--mystyle[aria-disabled=true]:hover:not(.focus-visible) {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+    cursor: default;
+  }
+
+  .reviews__button-next--mystyle:hover:not(.focus-visible) {
+    -webkit-filter: brightness(0.1);
+    filter: brightness(0.1);
+  }
+
+  .reviews__button-next--mystyle[aria-disabled=true]:hover:not(.focus-visible) {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+    cursor: default;
   }
 
   .form__input:hover:not(.focus-visible) {

@@ -10,7 +10,20 @@
   padding: 0;
 
   &--contact {
-    padding-left: 64px;
+    padding-left: 60px;
+    margin-left: 4px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 77%;
+      background-color: $color-light-slate-grey;
+      left: 0;
+      bottom: 24px;
+    }
   }
 
   &--address {
@@ -56,6 +69,16 @@
     &--address {
       padding: 0;
     }
+
+    &--contact {
+      padding-left: 48px;
+      margin-left: 15px;
+
+      &::after {
+        height: 78%;
+        bottom: 32px;
+      }
+    }
   }
 
   .contacts__item {
@@ -72,6 +95,11 @@
   .contacts__list {
     &--contact {
       padding-left: 0;
+      margin-left: 0;
+
+      &::after {
+        display: none;
+      }
     }
   }
 }

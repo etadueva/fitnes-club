@@ -251,6 +251,13 @@
   outline: 1px solid $color-crimson;
 }
 
+.season-tickets__tabs-item--1:hover + .season-tickets__tabs-title--1,
+.season-tickets__tabs-item--2:hover + .season-tickets__tabs-title--2,
+.season-tickets__tabs-item--3:hover + .season-tickets__tabs-title--3 {
+  outline: 1px solid $color-crimson;
+  cursor: pointer;
+}
+
 @include tablet-width-max {
   .season-tickets {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 3%, rgba(232, 232, 232, 1) 3%);

@@ -22,7 +22,7 @@
   -moz-border-image: -moz-linear-gradient(120deg, #0041CA 0%, #D10A42 100%);
   -webkit-border-image: -webkit-linear-gradient(120deg, #0041CA 0%, #D10A42 100%);
   border-image-slice: 1;
-  padding: 20px 28px;
+  padding: 18px 28px 20px;
 }
 
 .stocks__item-title {
@@ -36,6 +36,7 @@
 .stocks__item-description {
   color: $color-sapphire;
   line-height: 150%;
+  margin-top: 1px;
 }
 
 .stocks__item-link {
@@ -46,7 +47,7 @@
   line-height: 120%;
   letter-spacing: calc(1em/20);
   text-transform: uppercase;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   margin-top: auto;
   margin-right: auto;
   border-bottom: 1px solid $color-sapphire;
@@ -65,6 +66,7 @@
   letter-spacing: 2px;
   margin-left: 103px;
   margin-right: 103px;
+  margin-bottom: 46px;
   color: $color-sapphire;
 }
 
@@ -87,7 +89,7 @@
   font-size: 28px;
   line-height: 156%;
   font-weight: 700;
-  margin-top: 35px;
+  margin-top: 34px;
 }
 
 .stocks__main-stock-price {
@@ -110,7 +112,7 @@
   line-height: 112%;
   letter-spacing: calc(1em/20);
   text-transform: uppercase;
-  margin-bottom: 44px;
+  margin-bottom: 45px;
   margin-top: auto;
   margin-right: auto;
   border-bottom: 1px solid $color-default-white;
@@ -169,6 +171,10 @@
     padding-top: 116%;
   }
 
+  .stocks__main-stock-name {
+    line-height: 164%;
+  }
+
   .stocks__main-stock-price {
     margin-top: 0;
     line-height: 75%;
@@ -200,7 +206,7 @@
 @include tablet {
   .stocks__main-stock-image {
     background-size: 475px 712px;
-    background-position: -9px -201px;
+    background-position: -3px -200px;
   }
 }
 
@@ -209,6 +215,7 @@
     font-size: 32px;
     margin-top: 4px;
     letter-spacing: calc(1em / 34);
+    padding-right: 5px;
   }
 
   .stocks__list {
@@ -228,15 +235,15 @@
   }
 
   .stocks__main-stock-name {
-    margin-top: 34px;
+    margin-top: 33px;
   }
 
   .stocks__main-stock-price {
-    margin-top: 4px;
+    margin-top: 2px;
   }
 
   .stocks__main-stock-description {
-    margin-top: 21px;
+    margin-top: 22px;
   }
 
   .stocks__main-stock-link {

@@ -224,6 +224,10 @@
     &::after {
       display: none;
     }
+
+    @include hover-focus {
+      filter: brightness(0.1);
+    }
   }
 }
 
@@ -247,6 +251,10 @@
 
     &::after {
       display: none;
+    }
+
+    @include hover-focus {
+      filter: brightness(0.1);
     }
   }
 }
@@ -405,7 +413,7 @@
       left: 15px;
       width: 10px;
       height: 19px;
-      margin-top: -22px;
+      margin-top: -8px;
 
       &::before {
         width: 10px;
@@ -420,7 +428,7 @@
       right: 15px;
       width: 10px;
       height: 19px;
-      margin-top: -22px;
+      margin-top: -8px;
 
       &::before {
         width: 10px;

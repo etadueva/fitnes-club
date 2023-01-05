@@ -4,16 +4,19 @@
 }
 
 .reviews__wrapper {
-  padding-top: 8px;
-  padding-bottom: 106px;
+  padding-top: 7px;
+  padding-bottom: 104px;
 }
 
-.reviews__swiper {
-  margin-top: 24px;
+.reviews__swiper-wrapper {
+  position: relative;
   width: 48%;
   margin-left: 300px;
   margin-right: 300px;
-  position: relative;
+}
+
+.reviews__swiper {
+  margin-top: 26px;
 }
 
 .reviews__title {
@@ -39,6 +42,7 @@
   padding: 62px;
   padding-right: 58px;
   padding-bottom: 56px;
+  padding-top: 60px;
   display: grid;
   grid-template-columns: 80px auto;
   column-gap: 28px;
@@ -48,7 +52,8 @@
   width: 66%;
   min-width: 80px;
   padding-top: 18%;
-  height: 78px;
+  margin-top: 2px;
+  height: 80px;
   border-radius: 50%;
   background-image: url('../img/reviews/review-image-user.jpg');
   background-size: 126px 174px;
@@ -64,7 +69,7 @@
 
 .reviews__user-text {
   display: block;
-  margin-top: 15px;
+  margin-top: 17px;
   line-height: 144%;
 }
 
@@ -82,6 +87,7 @@
     top: calc(50% - 16px);
     width: 16px;
     height: 32px;
+    cursor: pointer;
 
     &::before {
       content: '';
@@ -97,6 +103,17 @@
     &::after {
       display: none;
     }
+
+    @include hover-focus {
+      filter: brightness(0.1);
+    }
+  }
+}
+
+.reviews__button-prev--mystyle[aria-disabled="true"] {
+  @include hover-focus {
+    filter: brightness(1);
+    cursor: default;
   }
 }
 
@@ -107,6 +124,7 @@
     top: calc(50% - 16px);
     width: 16px;
     height: 32px;
+    cursor: pointer;
 
     &::before {
       content: '';
@@ -122,6 +140,17 @@
     &::after {
       display: none;
     }
+
+    @include hover-focus {
+      filter: brightness(0.1);
+    }
+  }
+}
+
+.reviews__button-next--mystyle[aria-disabled="true"] {
+  @include hover-focus {
+    filter: brightness(1);
+    cursor: default;
   }
 }
 
@@ -134,14 +163,14 @@
 
   .reviews__wrapper {
     padding-top: 40px;
-    padding-bottom: 85px;
+    padding-bottom: 83px;
   }
 
-  .reviews__swiper {
+  .reviews__swiper-wrapper {
+    width: auto;
     margin-top: 29px;
     margin-left: 56px;
     margin-right: 56px;
-    width: auto;
   }
 
   .reviews__user-photo {
@@ -170,7 +199,7 @@
     padding-bottom: 55px;
   }
 
-  .reviews__swiper {
+  .reviews__swiper-wrapper {
     margin-top: 30px;
     margin-left: 46px;
     margin-right: 46px;
@@ -199,6 +228,7 @@
     min-width: 68px;
     height: 68px;
     margin-left: 19px;
+    margin-top: 0;
     background-size: 106px 148px;
     background-position: -21px -14px;
     grid-row: 1 / 2;
