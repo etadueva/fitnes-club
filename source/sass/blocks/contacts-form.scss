@@ -21,7 +21,7 @@
   color: $color-sapphire;
   padding-right: 103px;
   padding-left: 120px;
-  padding-bottom: 46px;
+  padding-bottom: 47px;
 }
 
 .contacts-form__title {
@@ -39,7 +39,7 @@
   &--contacts {
     font-weight: 600;
     line-height: 100%;
-    margin-top: 65px;
+    margin-top: 62px;
   }
 }
 
@@ -75,6 +75,7 @@
 
     &--contacts {
       margin-left: 0;
+      margin-top: 65px;
     }
   }
 }

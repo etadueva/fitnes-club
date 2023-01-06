@@ -31,6 +31,10 @@
   }
 }
 
+.page-header__logo {
+  fill: $color-default-white;
+}
+
 @include tablet-width-max {
   .page-header__logo {
     width: 82px;
