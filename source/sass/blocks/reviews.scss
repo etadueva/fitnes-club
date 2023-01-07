@@ -56,6 +56,7 @@
   height: 80px;
   border-radius: 50%;
   background-image: url('../img/reviews/review-image-user.jpg');
+  background-color: $color-silver;
   background-size: 126px 174px;
   background-position: -26px -17px;
   background-repeat: no-repeat;
@@ -114,6 +115,7 @@
   @include hover-focus {
     filter: brightness(1);
     cursor: default;
+    outline: none;
   }
 }
 
@@ -151,6 +153,7 @@
   @include hover-focus {
     filter: brightness(1);
     cursor: default;
+    outline: none;
   }
 }
 
