@@ -1,5 +1,7 @@
 .footer-container {
   background-color: $color-black-russian;
+  margin-bottom: 0;
+  margin-top: auto;
 }
 
 .footer-container__wrapper {
@@ -43,6 +45,10 @@
 
 .footer-container__link-logo {
   display: block;
+
+  @include hover-focus {
+    outline: 1px solid $color-default-white;
+  }
 }
 
 .footer-container__logo {

@@ -711,14 +711,7 @@ button,
 
 .home-page__image {
   width: 100%;
-  height: 100%;
-  min-height: 556px;
   margin-top: -60px;
-  margin-bottom: 52px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #102654;
 }
 
 .home-page__description {
@@ -756,6 +749,7 @@ button,
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  margin-bottom: 95px;
 }
 
 .home-page__sity {
@@ -765,7 +759,7 @@ button,
   font-weight: 600;
   text-transform: uppercase;
   display: block;
-  width: 118px;
+  min-width: 118px;
   min-height: 37px;
   text-align: start;
   margin-top: 63px;
@@ -799,7 +793,7 @@ button,
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.0555555556em;
-  padding-top: 15px;
+  padding: 15px;
   margin-top: 50px;
   margin-right: 61px;
 }
@@ -811,7 +805,7 @@ button,
 
 .gym {
   background-color: #ffffff;
-  padding-top: 120px;
+  padding-top: 118px;
   padding-bottom: 120px;
   -webkit-box-shadow: inset 0 4px 4px rgba(1, 28, 64, 0.25);
   box-shadow: inset 0 4px 4px rgba(1, 28, 64, 0.25);
@@ -1016,7 +1010,6 @@ button,
   display: block;
   position: absolute;
   height: 1px;
-  width: 100%;
   background-color: #ffffff;
   width: 88px;
   margin-left: 1px;
@@ -1035,7 +1028,6 @@ button,
   display: block;
   position: absolute;
   height: 1px;
-  width: 100%;
   background-color: #ffffff;
   width: 64px;
   margin-left: 1px;
@@ -1189,6 +1181,7 @@ button,
   background-color: #ffffff;
   padding: 10px;
   padding-bottom: 59px;
+  margin-bottom: 20px;
 }
 
 .season-tickets__item--2 {
@@ -1356,7 +1349,7 @@ button,
 .season-tickets__wrapper {
   position: relative;
   padding-top: 121px;
-  padding-bottom: 190px;
+  padding-bottom: 170px;
 }
 
 .season-tickets__background {
@@ -1418,6 +1411,14 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.coaches__list--nojs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 }
 
 .coaches__item {
@@ -1603,6 +1604,10 @@ button,
   filter: brightness(0.1);
 }
 
+.coaches__item-button-prev--nojs {
+  display: none;
+}
+
 .coaches__item-button-next--mystyle {
   right: 46px;
   width: 16px;
@@ -1628,6 +1633,10 @@ button,
 .coaches__item-button-next--mystyle.focus-visible:focus {
   -webkit-filter: brightness(0.1);
   filter: brightness(0.1);
+}
+
+.coaches__item-button-next--nojs {
+  display: none;
 }
 
 .advantages {
@@ -1705,7 +1714,6 @@ button,
   -ms-grid-row-span: 2;
   grid-row: 1/3;
   color: #ffffff;
-  align-items: center;
 }
 
 .advantages__item--center::after {
@@ -1733,12 +1741,11 @@ button,
 }
 
 .advantages__number--gradient {
-  background: -o-linear-gradient(307deg, #D10A42 0%, #0041CA 87%);
-  background: linear-gradient(143deg, #D10A42 0%, #0041CA 87%);
+  background: -o-linear-gradient(307deg, #d10a42 0%, #0041ca 87%);
+  background: linear-gradient(143deg, #d10a42 0%, #0041ca 87%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .advantages__number--center {
@@ -1830,9 +1837,8 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   border: 7px solid transparent;
-  -o-border-image: -o-linear-gradient(330deg, #0041CA 0%, #D10A42 100%);
-  border-image: linear-gradient(120deg, #0041CA 0%, #D10A42 100%);
-  -webkit-border-image: -webkit-linear-gradient(120deg, #0041CA 0%, #D10A42 100%);
+  -o-border-image: -o-linear-gradient(330deg, #d10a42 0%, #0041ca 110%);
+  border-image: linear-gradient(120deg, #d10a42 0%, #0041ca 110%);
   border-image-slice: 1;
   padding: 18px 28px 20px;
 }
@@ -1988,6 +1994,14 @@ button,
 .reviews__list {
   list-style-type: none;
   padding: 0;
+  background-color: #1c3374;
+}
+
+.reviews__list--nojs {
+  display: -ms-grid;
+  display: grid;
+  background-color: #ffffff;
+  row-gap: 10px;
 }
 
 .reviews__item {
@@ -2004,6 +2018,8 @@ button,
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .reviews__user-photo {
@@ -2070,6 +2086,10 @@ button,
   filter: brightness(0.1);
 }
 
+.reviews__button-prev--nojs {
+  display: none;
+}
+
 .reviews__button-prev--mystyle[aria-disabled=true].focus-visible:focus {
   -webkit-filter: brightness(1);
   filter: brightness(1);
@@ -2106,6 +2126,10 @@ button,
   filter: brightness(0.1);
 }
 
+.reviews__button-next--nojs {
+  display: none;
+}
+
 .reviews__button-next--mystyle[aria-disabled=true].focus-visible:focus {
   -webkit-filter: brightness(1);
   filter: brightness(1);
@@ -2118,7 +2142,7 @@ button,
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(16, 38, 84)), color-stop(50%, rgb(255, 255, 255)));
   background: -o-linear-gradient(left, rgb(16, 38, 84) 50%, rgb(255, 255, 255) 50%);
   background: linear-gradient(90deg, rgb(16, 38, 84) 50%, rgb(255, 255, 255) 50%);
-  border-top: 1px solid #74819C;
+  border-top: 1px solid #74819c;
 }
 
 .contacts-form__wrapper {
@@ -2176,7 +2200,7 @@ button,
 
 .form__input {
   border: none;
-  border-bottom: 1px solid #74819C;
+  border-bottom: 1px solid #74819c;
   background-color: rgba(255, 255, 255, 0);
   color: #ffffff;
   min-width: 190px;
@@ -2187,6 +2211,26 @@ button,
 .form__input.focus-visible:focus {
   outline: none;
   border: 1px solid #ffffff;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.form__input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form__input::placeholder {
+  color: #ffffff;
 }
 
 .form__meaning {
@@ -2237,7 +2281,7 @@ button,
   position: absolute;
   width: 1px;
   height: 77%;
-  background-color: #74819C;
+  background-color: #74819c;
   left: 0;
   bottom: 24px;
 }
@@ -2269,6 +2313,8 @@ button,
 
 .footer-container {
   background-color: #030a1a;
+  margin-bottom: 0;
+  margin-top: auto;
 }
 
 .footer-container__wrapper {
@@ -2323,6 +2369,10 @@ button,
 
 .footer-container__link-logo {
   display: block;
+}
+
+.footer-container__link-logo.focus-visible:focus {
+  outline: 1px solid #ffffff;
 }
 
 .footer-container__logo {
@@ -2398,17 +2448,26 @@ button,
 
 @media (min-width: 1200px) {
   .wrapper {
-    background: conic-gradient(from 15.5rad at 16% 39%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
+    background: conic-gradient(from 15.5rad at 16% 4.4%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
   }
 
-  .home-page__image {
-    background-image: url("../img/page-block/home-page.jpg");
+  .home-page__image::before {
+    content: "";
+    display: block;
+    padding-top: 111%;
+    background: url("../img/page-block/home-page.jpg"), #102654;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
-  .home-page__image {
-    background-image: url("../img/page-block/home-page@2x.jpg");
+  .home-page__image::before {
+    background: url("../img/page-block/home-page@2x.jpg"), #102654;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -2465,6 +2524,10 @@ button,
     column-gap: 27px;
   }
 
+  .home-page__group {
+    margin-bottom: 12px;
+  }
+
   .home-page__list {
     font-size: 14px;
     line-height: 150%;
@@ -2501,12 +2564,6 @@ button,
   }
 
   .home-page__image {
-    margin-top: 0;
-    margin-bottom: 52px;
-    background-image: url("../img/page-block/home-page-tablet.jpg");
-    background-size: 324px 390px;
-    background-position: top;
-    background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 83px;
   }
@@ -2514,7 +2571,11 @@ button,
   .home-page__image::before {
     content: "";
     display: block;
-    padding-top: 100%;
+    padding-top: 120%;
+    background-image: url("../img/page-block/home-page-tablet.jpg");
+    background-size: 324px 390px;
+    background-position: top;
+    background-repeat: no-repeat;
   }
 
   .gym {
@@ -2553,7 +2614,6 @@ button,
   .gym__title {
     font-size: 42px;
     text-align: center;
-    padding-right: 5px;
     margin-top: 9px;
     padding-right: 15px;
   }
@@ -2835,6 +2895,12 @@ button,
     margin-right: 101px;
   }
 
+  .coaches__list--nojs {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
   .coaches__item {
     min-width: 268px;
     max-width: 500px;
@@ -3000,7 +3066,7 @@ button,
   }
 
   .stocks__item-link {
-    margin-bottom: 8px;
+    margin-bottom: 9px;
   }
 
   .reviews__title {
@@ -3170,14 +3236,14 @@ button,
 }
 
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-  .home-page__image {
+  .home-page__image::before {
     background-image: url("../img/page-block/home-page-tablet@2x.jpg");
   }
 }
 
 @media (max-width: 767px) {
   .wrapper {
-    background: conic-gradient(from 15.5rad at 36% 25%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
+    background: conic-gradient(from 15.5rad at 36% 2.1%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
   }
 
   .container {
@@ -3207,6 +3273,9 @@ button,
   .page-header__list {
     margin-top: 12px;
     margin-right: 0;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
   }
 
   .home-page {
@@ -3251,7 +3320,7 @@ button,
   .home-page__link {
     margin-top: 22px;
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 68px;
   }
 
   .gym {
@@ -3343,6 +3412,10 @@ button,
     padding-top: 101%;
   }
 
+  .promo__title {
+    max-width: 100px;
+  }
+
   .season-tickets__wrapper {
     padding-top: 52px;
     padding-bottom: 71px;
@@ -3428,13 +3501,20 @@ button,
   }
 
   .coaches {
-    padding-top: 30px;
+    padding-top: 28px;
   }
 
   .coaches__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .coaches__list--nojs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .coaches__title {
@@ -3531,7 +3611,7 @@ button,
   }
 
   .advantages__wrapper {
-    padding-top: 66px;
+    padding-top: 68px;
     padding-bottom: 64px;
   }
 
@@ -3679,14 +3759,6 @@ button,
     grid-template-columns: 86px auto;
   }
 
-  .reviews__button-prev--mystyle {
-    left: -32px;
-  }
-
-  .reviews__button-next--mystyle {
-    right: -32px;
-  }
-
   .reviews__user-photo {
     width: 68px;
     min-width: 68px;
@@ -3732,7 +3804,7 @@ button,
   .reviews__button-next--mystyle {
     width: 10px;
     height: 19px;
-    right: -31px;
+    right: -32px;
     top: calc(50% - 9px);
   }
 
@@ -3856,7 +3928,7 @@ button,
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .wrapper {
-    background: conic-gradient(from 15.5rad at 21% 36%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
+    background: conic-gradient(from 15.5rad at 21% 2.8%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
   }
 }
 
@@ -4066,6 +4138,10 @@ button,
   }
 
   .footer-container__item-link:hover:not(.focus-visible) {
+    outline: 1px solid #ffffff;
+  }
+
+  .footer-container__link-logo:hover:not(.focus-visible) {
     outline: 1px solid #ffffff;
   }
 

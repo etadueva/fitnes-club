@@ -34,6 +34,13 @@
 .reviews__list {
   list-style-type: none;
   padding: 0;
+  background-color: $color-resolution-blue;
+
+  &--nojs {
+    display: grid;
+    background-color: $color-default-white;
+    row-gap: 10px;
+  }
 }
 
 .reviews__item {
@@ -46,6 +53,8 @@
   display: grid;
   grid-template-columns: 80px auto;
   column-gap: 28px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .reviews__user-photo {
@@ -109,6 +118,10 @@
       filter: brightness(0.1);
     }
   }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .reviews__button-prev--mystyle[aria-disabled="true"] {
@@ -146,6 +159,10 @@
     @include hover-focus {
       filter: brightness(0.1);
     }
+  }
+
+  &--nojs {
+    display: none;
   }
 }
 
@@ -260,7 +277,7 @@
     &--mystyle {
       width: 10px;
       height: 19px;
-      right: -31px;
+      right: -32px;
       top: calc(50% - 9px);
 
       &::before {

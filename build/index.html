@@ -18,7 +18,7 @@
   <body>
     <div class="wrapper">
       <div class="wrapper__background">
-        <header class="page-header">
+        <header class="page-header" id="page-header">
           <div class="page-header__wrapper container">
             <a class="page-header__link">
               <h4 class="visually-hidden">Логотип фитнес клуба</h4>
@@ -255,7 +255,7 @@
             <div class="coaches__wrapper container coaches__wrapper--swiper">
               <h2 class="coaches__title">Тренеры</h2>
               <div class="coaches__swiper swiper swiper-coaches">
-                <ul class="coaches__list swiper-wrapper">
+                <ul class="coaches__list swiper-wrapper coaches__list--nojs">
                   <li class="coaches__item swiper-slide">
                     <div class="coaches__item-cover coaches__item-cover--first">
                       <button class="coaches__button-cover" type="button">Анна Павлова</button>
@@ -370,8 +370,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="coaches__item-button-prev swiper-button-prev coaches__item-button-prev--mystyle"></div>
-              <div class="coaches__item-button-next swiper-button-next coaches__item-button-next--mystyle"></div>
+              <div class="coaches__item-button-prev swiper-button-prev coaches__item-button-prev--mystyle coaches__item-button-prev--nojs"></div>
+              <div class="coaches__item-button-next swiper-button-next coaches__item-button-next--mystyle coaches__item-button-next--nojs"></div>
             </div>
           </section>
           <section class="advantages">
@@ -446,7 +446,7 @@
                 </li>
                 <li class="stocks__item">
                   <h3 class="stocks__item-title">Скидка 20%</h3>
-                  <span class="stocks__item-description">Корпоративный фитнес с командой</span>
+                  <span class="stocks__item-description">Корпоративный фитнес с&nbsp;командой</span>
                   <a class="stocks__item-link" href="#">Подробнее</a>
                 </li>
               </ul>
@@ -457,7 +457,7 @@
               <h2 class="reviews__title">Отзывы</h2>
               <div class="reviews__swiper-wrapper">
                 <div class="reviews__swiper swiper swiper-reviews">
-                  <ul class="reviews__list swiper-wrapper">
+                  <ul class="reviews__list swiper-wrapper reviews__list--nojs">
                     <li class="reviews__item swiper-slide">
                       <div class="reviews__user-photo"></div>
                       <h4 class="reviews__user-name">Анна Орлова</h4>
@@ -470,8 +470,8 @@
                     </li>
                   </ul>
                 </div>
-                <div class="reviews__button-prev swiper-button-prev-reviews reviews__button-prev--mystyle"></div>
-                <div class="reviews__button-next swiper-button-next-reviews reviews__button-next--mystyle"></div>
+                <div class="reviews__button-prev swiper-button-prev-reviews reviews__button-prev--mystyle reviews__button-prev--nojs"></div>
+                <div class="reviews__button-next swiper-button-next-reviews reviews__button-next--mystyle reviews__button-next--nojs"></div>
               </div>
             </div>
           </section>
@@ -520,62 +520,62 @@
             </div>
           </section>
         </main>
-        <footer class="footer-container">
-          <div class="footer-container__wrapper container">
-            <ul class="footer-container__list-nav">
-              <li class="footer-container__item-nav footer-container__item-nav--logo">
-                <a class="footer-container__link-logo">
-                  <span class="visually-hidden">Логотип компании.</span>
-                  <svg class="footer-container__logo" width="88" height="32">
-                    <use href="./img/sprite.svg#logo-club"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-container__item-nav">
-                <a class="footer-container__item-link" href="#advantages">Услуги</a>
-              </li>
-              <li class="footer-container__item-nav">
-                <a class="footer-container__item-link" href="#season-tickets">Абонементы</a>
-              </li>
-              <li class="footer-container__item-nav">
-                <a class="footer-container__item-link" href="#stocks">Акции</a>
-              </li>
-              <li class="footer-container__item-nav">
-                <a class="footer-container__item-link" href="#coaches">Тренеры</a>
-              </li>
-              <li class="footer-container__item-nav">
-                <a class="footer-container__item-link" href="#">Расписание</a>
-              </li>
-            </ul>
-            <ul class="footer-container__list-social social-list">
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <span class="visually-hidden">Ссылка на социальную сеть вконтакте.</span>
-                  <svg class="social-list__icon" width="25" height="25">
-                    <use href="./img/sprite.svg#vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <span class="visually-hidden">Ссылка на социальную сеть одноклассники.</span>
-                  <svg class="social-list__icon" width="25" height="25">
-                    <use href="./img/sprite.svg#ok"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <span class="visually-hidden">Ссылка на социальную сеть реддит.</span>
-                  <svg class="social-list__icon" width="25" height="25">
-                    <use href="./img/sprite.svg#reddit"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </footer>
       </div>
+      <footer class="footer-container">
+        <div class="footer-container__wrapper container">
+          <ul class="footer-container__list-nav">
+            <li class="footer-container__item-nav footer-container__item-nav--logo">
+              <a class="footer-container__link-logo" href="#page-header">
+                <span class="visually-hidden">Логотип компании.</span>
+                <svg class="footer-container__logo" width="88" height="32">
+                  <use href="./img/sprite.svg#logo-club"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-container__item-nav">
+              <a class="footer-container__item-link" href="#advantages">Услуги</a>
+            </li>
+            <li class="footer-container__item-nav">
+              <a class="footer-container__item-link" href="#season-tickets">Абонементы</a>
+            </li>
+            <li class="footer-container__item-nav">
+              <a class="footer-container__item-link" href="#stocks">Акции</a>
+            </li>
+            <li class="footer-container__item-nav">
+              <a class="footer-container__item-link" href="#coaches">Тренеры</a>
+            </li>
+            <li class="footer-container__item-nav">
+              <a class="footer-container__item-link" href="#">Расписание</a>
+            </li>
+          </ul>
+          <ul class="footer-container__list-social social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Ссылка на социальную сеть вконтакте.</span>
+                <svg class="social-list__icon" width="25" height="25">
+                  <use href="./img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Ссылка на социальную сеть одноклассники.</span>
+                <svg class="social-list__icon" width="25" height="25">
+                  <use href="./img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Ссылка на социальную сеть реддит.</span>
+                <svg class="social-list__icon" width="25" height="25">
+                  <use href="./img/sprite.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/vendor.min.js"></script>

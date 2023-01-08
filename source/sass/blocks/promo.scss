@@ -249,6 +249,10 @@
   .promo__image {
     padding-top: 101%;
   }
+
+  .promo__title {
+    max-width: 100px;
+  }
 }
 
 @include mobile {

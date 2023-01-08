@@ -83,6 +83,7 @@
   &--gradient {
     background: linear-gradient(143deg, #d10a42 0%, #0041ca 87%);
     background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   &--center {
@@ -247,7 +248,7 @@
   }
 
   .advantages__wrapper {
-    padding-top: 66px;
+    padding-top: 68px;
     padding-bottom: 64px;
   }
 

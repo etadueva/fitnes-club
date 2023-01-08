@@ -10,14 +10,7 @@
 
 .home-page__image {
   width: 100%;
-  height: 100%;
-  min-height: 556px;
   margin-top: -60px;
-  margin-bottom: 52px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: $color-sapphire;
 }
 
 .home-page__description {
@@ -46,6 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-bottom: 95px;
 }
 
 .home-page__sity {
@@ -55,7 +49,7 @@
   font-weight: 600;
   text-transform: uppercase;
   display: block;
-  width: 118px;
+  min-width: 118px;
   min-height: 37px;
   text-align: start;
   margin-top: 63px;
@@ -89,7 +83,7 @@
   font-weight: 700;
   text-align: center;
   letter-spacing: calc(1em / 18);
-  padding-top: 15px;
+  padding: 15px;
   margin-top: 50px;
   margin-right: 61px;
 
@@ -101,10 +95,21 @@
 
 @include desktop-width-min {
   .home-page__image {
-    background-image: url("../img/page-block/home-page.jpg");
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 111%;
+      background: url("../img/page-block/home-page.jpg"), $color-sapphire;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
 
-    @include retina {
-      background-image: url("../img/page-block/home-page@2x.jpg");
+      @include retina {
+        background: url("../img/page-block/home-page@2x.jpg"), $color-sapphire;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
   }
 }
@@ -123,6 +128,10 @@
   .home-page__wrapper {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 27px;
+  }
+
+  .home-page__group {
+    margin-bottom: 12px;
   }
 
   .home-page__list {
@@ -161,21 +170,21 @@
   }
 
   .home-page__image {
-    background-image: url("../img/page-block/home-page-tablet.jpg");
-    background-size: 324px 390px;
-    background-position: top;
-    background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 83px;
-
-    @include retina {
-      background-image: url("../img/page-block/home-page-tablet@2x.jpg");
-    }
 
     &::before {
       content: "";
       display: block;
-      padding-top: 100%;
+      padding-top: 120%;
+      background-image: url("../img/page-block/home-page-tablet.jpg");
+      background-size: 324px 390px;
+      background-position: top;
+      background-repeat: no-repeat;
+
+      @include retina {
+        background-image: url("../img/page-block/home-page-tablet@2x.jpg");
+      }
     }
   }
 }
@@ -223,6 +232,6 @@
   .home-page__link {
     margin-top: 22px;
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 68px;
   }
 }

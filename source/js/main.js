@@ -1,8 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {setupVideo} from './modules/video';
 import {showCard} from './modules/tuch-event';
-import Swiper from 'swiper/bundle';
-
+import {disableStylesNojs} from './modules/disable-tyles-nojs';
 
 // ---------------------------------
 
@@ -47,6 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  disableStylesNojs();
   setupVideo();
   showCard();
   swiper();
