@@ -72,7 +72,7 @@ hr {
 pre {
   font-size: 1em;
   /* 2 */
-  font-family: "Alumni Sans", "Roboto Condensed";
+  font-family: monospace, monospace;
   /* 1 */
 }
 

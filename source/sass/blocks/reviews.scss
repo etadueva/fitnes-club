@@ -55,7 +55,7 @@
   margin-top: 2px;
   height: 80px;
   border-radius: 50%;
-  background-image: url('../img/reviews/review-image-user.jpg');
+  background-image: url("../img/reviews/review-image-user.jpg");
   background-color: $color-silver;
   background-size: 126px 174px;
   background-position: -26px -17px;
@@ -91,11 +91,11 @@
     cursor: pointer;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 16px;
       height: 32px;
-      background-image: url('../img/coaches/button-swiper-prev.png');
+      background-image: url("../img/coaches/button-swiper-prev.png");
       background-size: 16px 32px;
       background-position: center;
       background-repeat: no-repeat;
@@ -129,11 +129,11 @@
     cursor: pointer;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 16px;
       height: 32px;
-      background-image: url('../img/coaches/button-swiper-next.png');
+      background-image: url("../img/coaches/button-swiper-next.png");
       background-size: 16px 32px;
       background-position: center;
       background-repeat: no-repeat;
@@ -212,18 +212,6 @@
     padding: 40px 23px 34px;
     column-gap: 15px;
     grid-template-columns: 86px auto;
-  }
-
-  .reviews__button-prev {
-    &--mystyle {
-      left: -32px;
-    }
-  }
-
-  .reviews__button-next {
-    &--mystyle {
-      right: -32px;
-    }
   }
 
   .reviews__user-photo {

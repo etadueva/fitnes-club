@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {setupVideo} from './modules/video';
 import {showCard} from './modules/tuch-event';
+import Swiper from 'swiper/bundle';
 
 
 // ---------------------------------

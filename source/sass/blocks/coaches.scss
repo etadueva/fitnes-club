@@ -212,11 +212,11 @@
     margin-top: -12px;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 16px;
       height: 32px;
-      background-image: url('../img/coaches/button-swiper-prev.png');
+      background-image: url("../img/coaches/button-swiper-prev.png");
       background-size: 16px 32px;
       background-position: center;
       background-repeat: no-repeat;
@@ -240,11 +240,11 @@
     margin-top: -12px;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 16px;
       height: 32px;
-      background-image: url('../img/coaches/button-swiper-next.png');
+      background-image: url("../img/coaches/button-swiper-next.png");
       background-size: 16px 32px;
       background-position: center;
       background-repeat: no-repeat;
@@ -319,6 +319,7 @@
   .coaches__item {
     min-width: 268px;
     max-width: 500px;
+
     &::before {
       padding-top: 110%;
     }
@@ -374,7 +375,6 @@
 
   .coaches__title {
     font-size: 32px;
-
   }
 
   .coaches__wrapper {
@@ -390,6 +390,7 @@
   .coaches__item {
     min-width: 100px;
     max-width: 675px;
+
     &::before {
       padding-top: 121%;
     }
