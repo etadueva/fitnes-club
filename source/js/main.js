@@ -49,8 +49,6 @@ window.addEventListener('DOMContentLoaded', () => {
   disableStylesNojs();
   setupVideo();
   showCard();
-  swiper();
-  swiperReviews();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
