@@ -58,20 +58,3 @@
   transition: none !important;
 }
 
-@include desktop-width-min {
-  .wrapper {
-    background: conic-gradient(from 15.5rad at 16% 4.4%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
-  }
-}
-
-@include tablet-min-max {
-  .wrapper {
-    background: conic-gradient(from 15.5rad at 21% 2.8%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
-  }
-}
-
-@include mobile-width-max {
-  .wrapper {
-    background: conic-gradient(from 15.5rad at 36% 2.1%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
-  }
-}

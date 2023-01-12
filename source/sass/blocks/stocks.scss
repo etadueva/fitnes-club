@@ -21,6 +21,7 @@
   border-image: linear-gradient(120deg, #d10a42 0%, #0041ca 110%);
   border-image-slice: 1;
   padding: 18px 28px 20px;
+  min-height: 212px;
 }
 
 .stocks__item-title {
@@ -184,10 +185,6 @@
 
   .stocks__main-stock-link {
     margin-bottom: 47px;
-  }
-
-  .stocks__item {
-    min-height: 212px;
   }
 
   .stocks__item-description {

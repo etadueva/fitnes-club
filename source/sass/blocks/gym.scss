@@ -73,7 +73,6 @@
 .gym__video-wrapper {
   position: absolute;
   z-index: 1;
-  bottom: 0;
   left: 0;
   width: 49.8%;
   margin-left: 7px;
@@ -139,6 +138,12 @@
   .gym__video-wrapper {
     background-size: 394px 262px;
     background-position: -4px -27px;
+  }
+}
+
+@include desktop-width-min {
+  .gym__video-wrapper {
+    top: 287px;
   }
 }
 
@@ -209,6 +214,7 @@
     width: 39.2%;
     left: 30%;
     margin-left: 3px;
+    bottom: 0;
 
     &--image-enabled {
       padding-bottom: 25%;

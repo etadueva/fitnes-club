@@ -877,7 +877,6 @@ button,
 .gym__video-wrapper {
   position: absolute;
   z-index: 1;
-  bottom: 0;
   left: 0;
   width: 49.8%;
   margin-left: 7px;
@@ -951,18 +950,20 @@ button,
 .promo__info {
   color: #ffffff;
   background-color: #ed0233;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1.4fr;
-  grid-template-columns: 2fr 1.4fr;
-  padding: 83px 76px 84px;
+  padding: 83px 60px 84px;
+}
+
+.promo__info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .promo__correction {
   grid-column: 1/-1;
   font-size: 18px;
   line-height: 150%;
-  margin-left: 2px;
+  margin-left: 18px;
 }
 
 .promo__title {
@@ -972,15 +973,16 @@ button,
   text-transform: uppercase;
   font-weight: 600;
   text-align: center;
-  margin: 3px auto 0 0;
+  margin: 3px auto 0 auto;
   letter-spacing: 2px;
+  max-width: 178px;
 }
 
 .promo__conditions {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-right: 2px;
+  margin-right: 19px;
   margin-left: auto;
 }
 
@@ -1056,6 +1058,8 @@ button,
   color: #ffffff;
   border: 4px solid #ffffff;
   margin-top: 46px;
+  margin-left: 16px;
+  margin-right: 16px;
   min-height: 71px;
   padding: 10px;
   font-size: 12px;
@@ -1092,9 +1096,9 @@ button,
 }
 
 .season-tickets {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(7%, rgb(255, 255, 255)), color-stop(7%, rgb(232, 232, 232)));
-  background: -o-linear-gradient(bottom, rgb(255, 255, 255) 7%, rgb(232, 232, 232) 7%);
-  background: linear-gradient(0deg, rgb(255, 255, 255) 7%, rgb(232, 232, 232) 7%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(7%, rgb(255, 255, 255)), color-stop(7%, rgb(248, 249, 252)));
+  background: -o-linear-gradient(bottom, rgb(255, 255, 255) 7%, rgb(248, 249, 252) 7%);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 7%, rgb(248, 249, 252) 7%);
   margin-top: -1px;
 }
 
@@ -1237,10 +1241,8 @@ button,
 }
 
 .season-tickets__tabs-title--2 {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 31px;
-  width: 117px;
+  margin-left: 34%;
+  width: 87px;
 }
 
 .season-tickets__tabs-title--3 {
@@ -1841,6 +1843,7 @@ button,
   border-image: linear-gradient(120deg, #d10a42 0%, #0041ca 110%);
   border-image-slice: 1;
   padding: 18px 28px 20px;
+  min-height: 212px;
 }
 
 .stocks__item-title {
@@ -1964,7 +1967,7 @@ button,
 }
 
 .reviews__wrapper {
-  padding-top: 7px;
+  padding-top: 5px;
   padding-bottom: 104px;
 }
 
@@ -2246,7 +2249,7 @@ button,
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  min-width: 410px;
+  width: 410px;
   margin-top: 28px;
 }
 
@@ -2333,14 +2336,16 @@ button,
 .footer-container__list-nav {
   margin: 21px 40px 0 0;
   padding: 0;
+  padding-left: 78%;
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[6];
-  grid-template-columns: repeat(6, auto);
+  -ms-grid-columns: (auto)[5];
+  grid-template-columns: repeat(5, auto);
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
+  position: relative;
 }
 
 .footer-container__item-nav {
@@ -2349,13 +2354,9 @@ button,
 }
 
 .footer-container__item-nav--logo {
-  padding-right: 237px;
-  padding-top: 23px;
-  margin-top: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: -1;
-  grid-area: 1/2/1/1;
+  position: absolute;
+  height: auto;
+  margin-top: 23px;
 }
 
 .footer-container__item-link {
@@ -2447,10 +2448,6 @@ button,
 */
 
 @media (min-width: 1200px) {
-  .wrapper {
-    background: conic-gradient(from 15.5rad at 16% 4.4%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
-  }
-
   .home-page__image::before {
     content: "";
     display: block;
@@ -2459,6 +2456,14 @@ button,
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .gym__video-wrapper {
+    top: 287px;
+  }
+
+  .wrapper__background {
+    background: conic-gradient(from 15.5rad at 16% 4.4%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
   }
 }
 
@@ -2511,9 +2516,9 @@ button,
 
   .home-page__description {
     margin: 0;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
   }
 
   .home-page__wrapper {
@@ -2534,12 +2539,14 @@ button,
     letter-spacing: 0;
     margin: 0;
     margin-top: 93px;
+    margin-right: 11px;
     font-weight: 600;
   }
 
   .home-page__sity {
     font-size: 28px;
     width: auto;
+    min-width: 60px;
     margin-right: 3px;
   }
 
@@ -2650,6 +2657,7 @@ button,
     width: 39.2%;
     left: 30%;
     margin-left: 3px;
+    bottom: 0;
   }
 
   .gym__video-wrapper--image-enabled {
@@ -2699,7 +2707,7 @@ button,
   }
 
   .promo__conditions {
-    margin-right: 0;
+    margin: 0 auto 0 28px;
   }
 
   .promo__condition {
@@ -2743,15 +2751,17 @@ button,
   .promo__button {
     font-size: 10px;
     border: 2px solid #ffffff;
-    margin-top: 30px;
+    margin-top: 27px;
     min-height: 41px;
+    margin-left: 0;
+    margin-right: 0;
     padding: 5px;
   }
 
   .season-tickets {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, rgb(255, 255, 255)), color-stop(3%, rgb(232, 232, 232)));
-    background: -o-linear-gradient(bottom, rgb(255, 255, 255) 3%, rgb(232, 232, 232) 3%);
-    background: linear-gradient(0deg, rgb(255, 255, 255) 3%, rgb(232, 232, 232) 3%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, rgb(255, 255, 255)), color-stop(3%, rgb(248, 249, 252)));
+    background: -o-linear-gradient(bottom, rgb(255, 255, 255) 3%, rgb(248, 249, 252) 3%);
+    background: linear-gradient(0deg, rgb(255, 255, 255) 3%, rgb(248, 249, 252) 3%);
   }
 
   .season-tickets__tabs-item--1:checked ~ .season-tickets__list--1,
@@ -2814,10 +2824,8 @@ button,
   }
 
   .season-tickets__tabs-title--2 {
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 27px;
-    width: 104px;
+    margin-left: 38%;
+    width: 80px;
   }
 
   .season-tickets__tabs-title--3 {
@@ -3057,10 +3065,6 @@ button,
     margin-bottom: 47px;
   }
 
-  .stocks__item {
-    min-height: 212px;
-  }
-
   .stocks__item-description--one {
     padding-right: 28px;
   }
@@ -3099,7 +3103,7 @@ button,
 
   .reviews__item {
     padding-left: 65px;
-    padding-top: 61px;
+    padding-top: 58px;
   }
 
   .contacts-form {
@@ -3145,7 +3149,7 @@ button,
   }
 
   .form__group {
-    margin-top: 23px;
+    margin-top: 24px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -3218,6 +3222,8 @@ button,
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
+    padding-left: 34%;
+    margin-top: 22px;
   }
 
   .footer-container__item-nav {
@@ -3242,10 +3248,6 @@ button,
 }
 
 @media (max-width: 767px) {
-  .wrapper {
-    background: conic-gradient(from 15.5rad at 36% 2.1%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
-  }
-
   .container {
     padding: 0 0;
   }
@@ -3299,6 +3301,7 @@ button,
   .home-page__list {
     position: absolute;
     margin-top: 86px;
+    right: 165px;
   }
 
   .home-page__group {
@@ -3309,6 +3312,7 @@ button,
     margin-top: 57px;
     margin-right: 2px;
     font-size: 23px;
+    min-width: 48px;
   }
 
   .home-page__title {
@@ -3414,6 +3418,11 @@ button,
 
   .promo__title {
     max-width: 100px;
+    margin: 8px 0 0 6px;
+  }
+
+  .promo__conditions {
+    margin: 0 auto 0 39px;
   }
 
   .season-tickets__wrapper {
@@ -3441,7 +3450,8 @@ button,
   }
 
   .season-tickets__tabs-title--2 {
-    width: 96px;
+    width: 70px;
+    margin-left: 34%;
   }
 
   .season-tickets__tabs-title--3 {
@@ -3871,6 +3881,10 @@ button,
     display: none;
   }
 
+  .contacts__item-description--link {
+    display: inline-block;
+  }
+
   .footer-container__wrapper {
     display: block;
     padding: 46px 11px 40px 15px;
@@ -3909,10 +3923,12 @@ button,
 
   .footer-container__item-nav--logo {
     padding-top: 2px;
+    position: relative;
   }
 
   .footer-container__item-link {
     font-size: 16px;
+    display: inline-block;
   }
 
   .social-list {
@@ -3924,11 +3940,13 @@ button,
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-}
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .wrapper {
-    background: conic-gradient(from 15.5rad at 21% 2.8%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
+  .social-list__link {
+    display: block;
+  }
+
+  .wrapper__background {
+    background: conic-gradient(from 15.5rad at 36% 2.1%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
   }
 }
 
@@ -4034,6 +4052,12 @@ button,
   .stocks__main-stock-image {
     background-size: 346px 520px;
     background-position: -5px -153px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .wrapper__background {
+    background: conic-gradient(from 15.5rad at 21% 2.8%, #003d85 0deg, #b80027 277deg, #003d85 360deg, #b80027 8deg);
   }
 }
 
