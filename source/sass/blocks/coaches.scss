@@ -129,13 +129,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
+  // background-size: cover;
+  // background-position: center;
   background-repeat: no-repeat;
   background-color: $color-silver;
 
   &--first,
   &--five {
+    background-size: 260px 390px;
+    background-position: 0 -39px;
     background-image: url("../img/coaches/coache-pavlova.jpg");
 
     @include retina {
@@ -146,6 +148,8 @@
   &--two,
   &--six {
     background-image: url("../img/coaches/coache-lavrov.jpg");
+    background-size: 312px 468px;
+    background-position: -48px -36px;
 
     @include retina {
       background-image: url("../img/coaches/coache-lavrov@2x.jpg");
@@ -155,6 +159,8 @@
   &--three,
   &--seven {
     background-image: url("../img/coaches/coache-pashkov.jpg");
+    background-size: 260px 462px;
+    background-position: 0 -24px;
 
     @include retina {
       background-image: url("../img/coaches/coache-pashkov@2x.jpg");
@@ -164,6 +170,8 @@
   &--four,
   &--eight {
     background-image: url("../img/coaches/coache-ketova.jpg");
+    background-size: 354px 530px;
+    background-position: -48px -57px;
 
     @include retina {
       background-image: url("../img/coaches/coache-ketova@2x.jpg");
@@ -274,34 +282,6 @@
   }
 }
 
-@include desktop {
-  .coaches__item-cover {
-    &--first,
-    &--five {
-      background-size: 260px 390px;
-      background-position: 0 -39px;
-    }
-
-    &--two,
-    &--six {
-      background-size: 312px 468px;
-      background-position: -48px -36px;
-    }
-
-    &--three,
-    &--seven {
-      background-size: 260px 462px;
-      background-position: 0 -24px;
-    }
-
-    &--four,
-    &--eight {
-      background-size: 354px 530px;
-      background-position: -48px -57px;
-    }
-  }
-}
-
 @include tablet-width-max {
   .coaches {
     padding-top: 47px;
@@ -344,6 +324,11 @@
     &::before {
       padding-top: 110%;
     }
+  }
+
+  .coaches__item-cover {
+    background-size: cover;
+    background-position: center;
   }
 
   .coaches__item-content {

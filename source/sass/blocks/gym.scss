@@ -57,7 +57,7 @@
   background-size: cover;
   margin-left: auto;
   background-repeat: no-repeat;
-  background-position: center;
+    background-position: -1px -36px;
 
   @include retina {
     background-image: url("../img/description-club/club-image@2x.jpg");
@@ -77,8 +77,8 @@
   width: 49.8%;
   margin-left: 7px;
   background-image: url("../img/description-club/club-image-video.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 394px 262px;
+  background-position: -4px -27px;
 
   &--image-enabled {
     padding-bottom: 31.3%;
@@ -128,17 +128,6 @@
 .gym__iframe {
   width: 100%;
   height: 100%;
-}
-
-@include desktop {
-  .gym__image {
-    background-position: -1px -36px;
-  }
-
-  .gym__video-wrapper {
-    background-size: 394px 262px;
-    background-position: -4px -27px;
-  }
 }
 
 @include desktop-width-min {
@@ -215,6 +204,8 @@
     left: 30%;
     margin-left: 3px;
     bottom: 0;
+    background-position: center;
+    background-size: cover;
 
     &--image-enabled {
       padding-bottom: 25%;

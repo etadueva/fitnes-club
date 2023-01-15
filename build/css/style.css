@@ -865,7 +865,7 @@ button,
   background-size: cover;
   margin-left: auto;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -1px -36px;
 }
 
 .gym__image::before {
@@ -881,8 +881,8 @@ button,
   width: 49.8%;
   margin-left: 7px;
   background-image: url("../img/description-club/club-image-video.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 394px 262px;
+  background-position: -4px -27px;
 }
 
 .gym__video-wrapper--image-enabled {
@@ -1505,30 +1505,36 @@ button,
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   background-color: #bbbbbb;
 }
 
 .coaches__item-cover--first,
 .coaches__item-cover--five {
+  background-size: 260px 390px;
+  background-position: 0 -39px;
   background-image: url("../img/coaches/coache-pavlova.jpg");
 }
 
 .coaches__item-cover--two,
 .coaches__item-cover--six {
   background-image: url("../img/coaches/coache-lavrov.jpg");
+  background-size: 312px 468px;
+  background-position: -48px -36px;
 }
 
 .coaches__item-cover--three,
 .coaches__item-cover--seven {
   background-image: url("../img/coaches/coache-pashkov.jpg");
+  background-size: 260px 462px;
+  background-position: 0 -24px;
 }
 
 .coaches__item-cover--four,
 .coaches__item-cover--eight {
   background-image: url("../img/coaches/coache-ketova.jpg");
+  background-size: 354px 530px;
+  background-position: -48px -57px;
 }
 
 .coaches__button-cover {
@@ -1956,8 +1962,8 @@ button,
   padding-top: 165%;
   background-color: #0086fc;
   background-image: url("../img/stocks/stocks-image.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: 432px 648px;
+  background-position: -32px -180px;
   background-repeat: no-repeat;
 }
 
@@ -2658,6 +2664,8 @@ button,
     left: 30%;
     margin-left: 3px;
     bottom: 0;
+    background-position: center;
+    background-size: cover;
   }
 
   .gym__video-wrapper--image-enabled {
@@ -2916,6 +2924,11 @@ button,
 
   .coaches__item::before {
     padding-top: 110%;
+  }
+
+  .coaches__item-cover {
+    background-size: cover;
+    background-position: center;
   }
 
   .coaches__item-content {
@@ -3950,50 +3963,6 @@ button,
   }
 }
 
-@media (min-width: 1366px) and (max-width: 1366px) {
-  .gym__image {
-    background-position: -1px -36px;
-  }
-
-  .gym__video-wrapper {
-    background-size: 394px 262px;
-    background-position: -4px -27px;
-  }
-
-  .promo__image {
-    background-position: -20px;
-  }
-
-  .coaches__item-cover--first,
-  .coaches__item-cover--five {
-    background-size: 260px 390px;
-    background-position: 0 -39px;
-  }
-
-  .coaches__item-cover--two,
-  .coaches__item-cover--six {
-    background-size: 312px 468px;
-    background-position: -48px -36px;
-  }
-
-  .coaches__item-cover--three,
-  .coaches__item-cover--seven {
-    background-size: 260px 462px;
-    background-position: 0 -24px;
-  }
-
-  .coaches__item-cover--four,
-  .coaches__item-cover--eight {
-    background-size: 354px 530px;
-    background-position: -48px -57px;
-  }
-
-  .stocks__main-stock-image {
-    background-size: 432px 648px;
-    background-position: -32px -180px;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 768px) {
   .gym__image {
     background-size: 774px 403px;
@@ -4052,6 +4021,12 @@ button,
   .stocks__main-stock-image {
     background-size: 346px 520px;
     background-position: -5px -153px;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1366px) {
+  .promo__image {
+    background-position: -20px;
   }
 }
 
