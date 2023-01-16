@@ -57,7 +57,7 @@
   background-size: cover;
   margin-left: auto;
   background-repeat: no-repeat;
-    background-position: -1px -36px;
+  background-position: -1px -36px;
 
   @include retina {
     background-image: url("../img/description-club/club-image@2x.jpg");
