@@ -165,6 +165,8 @@
 
   .promo__info {
     padding: 43px 44px 52px;
+    display: flex;
+    flex-direction: column;
   }
 
   .promo__title {
@@ -221,6 +223,9 @@
     font-size: 12px;
     margin-left: 1px;
     margin-top: 4px;
+    text-align: center;
+    justify-content: center;
+    padding-right: 15px;
   }
 
   .promo__button {
@@ -264,6 +269,12 @@
 
   .promo__conditions {
     margin: 0 auto 0 39px;
+  }
+
+  .promo__correction {
+    justify-content: start;
+    text-align: start;
+    padding-right: 0;
   }
 }
 

@@ -36,6 +36,7 @@
   color: $color-sapphire;
   line-height: 150%;
   margin-top: 1px;
+  margin-bottom: 10px;
 }
 
 .stocks__item-link {
@@ -161,6 +162,8 @@
 
   .stocks__main-stock-image {
     padding-top: 116%;
+    background-position: center;
+    background-size: cover;
   }
 
   .stocks__main-stock-name {

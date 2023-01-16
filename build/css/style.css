@@ -1864,6 +1864,7 @@ button,
   color: #102654;
   line-height: 150%;
   margin-top: 1px;
+  margin-bottom: 10px;
 }
 
 .stocks__item-link {
@@ -2316,6 +2317,10 @@ button,
   color: #102654;
 }
 
+.contacts__item-description--link {
+  display: inline-block;
+}
+
 .contacts__item-description--link.focus-visible:focus {
   outline: 1px solid #102654;
 }
@@ -2340,12 +2345,12 @@ button,
 }
 
 .footer-container__list-nav {
-  margin: 21px 40px 0 0;
+  margin: 21px 0 0 0;
   padding: 0;
-  padding-left: 78%;
+  padding-left: 8px;
   list-style-type: none;
-  display: -ms-grid;
-  display: grid;
+  display: -ms-inline-grid;
+  display: inline-grid;
   -ms-grid-columns: (auto)[5];
   grid-template-columns: repeat(5, auto);
   -webkit-column-gap: 40px;
@@ -2360,9 +2365,9 @@ button,
 }
 
 .footer-container__item-nav--logo {
-  position: absolute;
   height: auto;
   margin-top: 23px;
+  display: none;
 }
 
 .footer-container__item-link {
@@ -2376,6 +2381,10 @@ button,
 
 .footer-container__link-logo {
   display: block;
+}
+
+.footer-container__link-logo--nolist {
+  margin-top: 43px;
 }
 
 .footer-container__link-logo.focus-visible:focus {
@@ -2702,6 +2711,13 @@ button,
 
   .promo__info {
     padding: 43px 44px 52px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .promo__title {
@@ -2754,6 +2770,11 @@ button,
     font-size: 12px;
     margin-left: 1px;
     margin-top: 4px;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-right: 15px;
   }
 
   .promo__button {
@@ -3059,6 +3080,8 @@ button,
 
   .stocks__main-stock-image {
     padding-top: 116%;
+    background-position: center;
+    background-size: cover;
   }
 
   .stocks__main-stock-name {
@@ -3235,7 +3258,6 @@ button,
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
-    padding-left: 34%;
     margin-top: 22px;
   }
 
@@ -3247,6 +3269,10 @@ button,
     margin-top: 0;
     padding-top: 25px;
     padding-right: 32px;
+  }
+
+  .footer-container__link-logo--nolist {
+    margin-top: 46px;
   }
 
   .social-list {
@@ -3436,6 +3462,14 @@ button,
 
   .promo__conditions {
     margin: 0 auto 0 39px;
+  }
+
+  .promo__correction {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    text-align: start;
+    padding-right: 0;
   }
 
   .season-tickets__wrapper {
@@ -3894,10 +3928,6 @@ button,
     display: none;
   }
 
-  .contacts__item-description--link {
-    display: inline-block;
-  }
-
   .footer-container__wrapper {
     display: block;
     padding: 46px 11px 40px 15px;
@@ -3929,14 +3959,18 @@ button,
     column-gap: 25px;
   }
 
+  .footer-container__link-logo--nolist {
+    display: none;
+  }
+
   .footer-container__item-nav {
     margin: 0;
     margin-bottom: 15px;
   }
 
   .footer-container__item-nav--logo {
+    display: block;
     padding-top: 2px;
-    position: relative;
   }
 
   .footer-container__item-link {

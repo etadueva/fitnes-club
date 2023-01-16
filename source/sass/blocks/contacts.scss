@@ -48,6 +48,8 @@
   color: $color-sapphire;
 
   &--link {
+    display: inline-block;
+
     @include hover-focus {
       outline: 1px solid $color-sapphire;
     }
@@ -100,12 +102,6 @@
       &::after {
         display: none;
       }
-    }
-  }
-
-  .contacts__item-description {
-    &--link {
-      display: inline-block;
     }
   }
 }
