@@ -112,7 +112,7 @@
   line-height: 112%;
   letter-spacing: calc(1em / 20);
   text-transform: uppercase;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
   margin-top: auto;
   margin-right: auto;
   border-bottom: 1px solid $color-default-white;
@@ -126,12 +126,20 @@
   padding-top: 165%;
   background-color: $color-dodger-blue;
   background-image: url("../img/stocks/stocks-image.jpg");
-  background-size: 432px 648px;
-  background-position: -32px -180px;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 
-  @include retina {
+  @include retina-desctop {
     background-image: url("../img/stocks/stocks-image@2x.jpg");
+  }
+
+  @include retina-tablet {
+    background-image: url("../img/stocks/stocks-image-tablet@2x.jpg");
+  }
+
+  @include retina-mobile {
+    background-image: url("../img/stocks/stocks-image-mobile@2x.jpg");
   }
 }
 
@@ -148,7 +156,7 @@
 
   .stocks__list {
     margin-top: 50px;
-    gap: 28px;
+    gap: 30px;
   }
 
   .stocks__main-stock {
@@ -161,9 +169,8 @@
   }
 
   .stocks__main-stock-image {
-    padding-top: 116%;
-    background-position: center;
-    background-size: cover;
+    padding-top: 115%;
+    background-image: url("../img/stocks/stocks-image-tablet.jpg");
   }
 
   .stocks__main-stock-name {
@@ -191,13 +198,6 @@
 
   .stocks__item-link {
     margin-bottom: 9px;
-  }
-}
-
-@include tablet {
-  .stocks__main-stock-image {
-    background-size: 475px 712px;
-    background-position: -3px -200px;
   }
 }
 
@@ -250,6 +250,7 @@
 
   .stocks__main-stock-image {
     padding-top: 103%;
+    background-image: url("../img/stocks/stocks-image-mobile.jpg");
   }
 
   .stocks__item {
@@ -269,12 +270,5 @@
   .stocks__item-link {
     margin-left: auto;
     margin-bottom: 11px;
-  }
-}
-
-@include mobile {
-  .stocks__main-stock-image {
-    background-size: 346px 520px;
-    background-position: -5px -153px;
   }
 }

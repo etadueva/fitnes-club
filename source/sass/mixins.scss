@@ -4,6 +4,24 @@
   }
 }
 
+@mixin retina-desctop {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx), (min-width: ($desktop-width-min)) {
+    @content;
+  }
+}
+
+@mixin retina-tablet {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx), (max-width: ($tablet-width-max)) {
+    @content;
+  }
+}
+
+@mixin retina-mobile {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx), (max-width: ($mobile-width-max)) {
+    @content;
+  }
+}
+
 
 @mixin hover {
   @media (hover: hover) {

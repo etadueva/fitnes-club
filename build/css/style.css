@@ -1949,7 +1949,7 @@ button,
   line-height: 112%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
   margin-top: auto;
   margin-right: auto;
   border-bottom: 1px solid #ffffff;
@@ -1963,8 +1963,8 @@ button,
   padding-top: 165%;
   background-color: #0086fc;
   background-image: url("../img/stocks/stocks-image.jpg");
-  background-size: 432px 648px;
-  background-position: -32px -180px;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -2488,6 +2488,12 @@ button,
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (min-width: 1200px) {
+  .stocks__main-stock-image {
+    background-image: url("../img/stocks/stocks-image@2x.jpg");
   }
 }
 
@@ -3065,7 +3071,7 @@ button,
 
   .stocks__list {
     margin-top: 50px;
-    gap: 28px;
+    gap: 30px;
   }
 
   .stocks__main-stock {
@@ -3079,9 +3085,8 @@ button,
   }
 
   .stocks__main-stock-image {
-    padding-top: 116%;
-    background-position: center;
-    background-size: cover;
+    padding-top: 115%;
+    background-image: url("../img/stocks/stocks-image-tablet.jpg");
   }
 
   .stocks__main-stock-name {
@@ -3283,6 +3288,12 @@ button,
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .home-page__image::before {
     background-image: url("../img/page-block/home-page-tablet@2x.jpg");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (max-width: 1199px) {
+  .stocks__main-stock-image {
+    background-image: url("../img/stocks/stocks-image-tablet@2x.jpg");
   }
 }
 
@@ -3771,6 +3782,7 @@ button,
 
   .stocks__main-stock-image {
     padding-top: 103%;
+    background-image: url("../img/stocks/stocks-image-mobile.jpg");
   }
 
   .stocks__item {
@@ -3997,6 +4009,12 @@ button,
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (max-width: 767px) {
+  .stocks__main-stock-image {
+    background-image: url("../img/stocks/stocks-image-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: 768px) and (max-width: 768px) {
   .gym__image {
     background-size: 774px 403px;
@@ -4023,11 +4041,6 @@ button,
     background-size: 345px 518px;
     background-position: -39px -52px;
   }
-
-  .stocks__main-stock-image {
-    background-size: 475px 712px;
-    background-position: -3px -200px;
-  }
 }
 
 @media (min-width: 320px) and (max-width: 320px) {
@@ -4050,11 +4063,6 @@ button,
   .coaches__item-cover--seven {
     background-size: 226px 443px;
     background-position: 0 -29px;
-  }
-
-  .stocks__main-stock-image {
-    background-size: 346px 520px;
-    background-position: -5px -153px;
   }
 }
 
@@ -4219,9 +4227,5 @@ button,
   .coaches__item-cover--four,
   .coaches__item-cover--eight {
     background-image: url("../img/coaches/coache-ketova@2x.jpg");
-  }
-
-  .stocks__main-stock-image {
-    background-image: url("../img/stocks/stocks-image@2x.jpg");
   }
 }
